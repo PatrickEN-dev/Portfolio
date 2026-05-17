@@ -35,9 +35,9 @@
   },
   "about": {
     "eyebrow": "Sobre mí",
-    "bioBefore": "Soy desarrollador full stack con más de cuatro años de experiencia. Crecí de Junior a Semisenior en entorno corporativo y construí dos SaaS propios en producción con clientes pagantes activos. Mi foco es construir sistemas que necesitan sobrevivir a ",
+    "bioBefore": "Soy desarrollador full stack con más de cuatro años de experiencia. Crecí de Junior a Semisenior en entorno corporativo y construí dos SaaS propios en producción con clientes pagantes activos. Mi foco es construir sistemas preparados para ",
     "bioHighlight": "producción real",
-    "bioAfter": ", sin espacio para el error.",
+    "bioAfter": ", con la robustez que ese entorno exige.",
     "summaryLabel": "Abierto a oportunidades",
     "summaryFocus": "Back-end Node.js, arquitectura y sistemas en producción.",
     "summaryDomain1": "FinTech",
@@ -97,7 +97,7 @@
   "experience": {
     "eyebrow": "Experiencia",
     "title": "Trayectoria profesional",
-    "subtitle": "Del primer contrato como Junior a la arquitectura de FinTechs en producción.",
+    "subtitle": "Los hitos y logros que estructuran mi trayectoria hasta aquí.",
     "currentBadge": "Actual",
     "items": {
       "sttart": {
@@ -176,7 +176,7 @@
       },
       "production": {
         "title": "Producción & Confiabilidad",
-        "summary": "Sé qué necesita un sistema para sobrevivir en producción. Funcionar en localhost es el mínimo, mantenerlo en el aire es el trabajo.",
+        "summary": "Construir un sistema es una etapa; mantenerlo en producción es otra. Trabajo con observabilidad, resiliencia y el cuidado continuo que ese entorno exige.",
         "body": "Validaciones de transacción, retry con backoff exponencial, idempotencia, logging estructurado, mitigación de cold starts serverless, smoke tests en staging, observabilidad de errores."
       },
       "leadership": {
@@ -186,7 +186,7 @@
       },
       "ai": {
         "title": "IA Aplicada & Automatización",
-        "summary": "Construyo sistemas con IA real, no solo uso ChatGPT. Ingeniería de flujo, integración y producto.",
+        "summary": "Actualmente profundizando en SDD (Spec-Driven Development), RAG, arquitectura e ingeniería de creación de agentes. Foco en IA como parte de la arquitectura del producto, con contexto bien diseñado.",
         "body": "Agentes multi-paso con OpenAI, arquitectura RAG con knowledge bases, validación de contexto, enrutamiento conversacional entre agentes especializados, automatizaciones N8N integrando APIs externas."
       }
     }

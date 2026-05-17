@@ -35,9 +35,9 @@
   },
   "about": {
     "eyebrow": "About",
-    "bioBefore": "I'm a full stack developer with over four years of experience. I grew from Junior to Mid-Level in a corporate environment and shipped two of my own SaaS products to production with active paying clients. My focus is building systems that need to survive ",
+    "bioBefore": "I'm a full stack developer with over four years of experience. I grew from Junior to Mid-Level in a corporate environment and shipped two of my own SaaS products to production with active paying clients. My focus is building systems prepared for ",
     "bioHighlight": "real production",
-    "bioAfter": ", with no room for error.",
+    "bioAfter": ", with the robustness that environment demands.",
     "summaryLabel": "Open to opportunities",
     "summaryFocus": "Node.js back-end, architecture and production systems.",
     "summaryDomain1": "FinTech",
@@ -97,7 +97,7 @@
   "experience": {
     "eyebrow": "Experience",
     "title": "Career timeline",
-    "subtitle": "From the first Junior contract to architecting production FinTechs.",
+    "subtitle": "The milestones and achievements that shape my journey so far.",
     "currentBadge": "Current",
     "items": {
       "sttart": {
@@ -176,7 +176,7 @@
       },
       "production": {
         "title": "Production & Reliability",
-        "summary": "I know what a system needs to survive in production. Working on localhost is the bare minimum. Keeping it up is the job.",
+        "summary": "Shipping a system is one stage; keeping it running in production is another. I work with observability, resilience and the continuous care that environment requires.",
         "body": "Transaction validations, retry with exponential backoff, idempotency, structured logging, serverless cold start mitigation, staging smoke tests, error observability."
       },
       "leadership": {
@@ -186,7 +186,7 @@
       },
       "ai": {
         "title": "Applied AI & Automation",
-        "summary": "I build real AI systems, not just use ChatGPT. Flow engineering, integration and product.",
+        "summary": "Currently going deeper into SDD (Spec-Driven Development), RAG, architecture and agent engineering. Focused on AI as part of the product architecture, with well-designed context.",
         "body": "Multi-step agents with OpenAI, RAG architecture with knowledge bases, context validation, conversational routing between specialized agents, N8N automations integrating external APIs."
       }
     }
