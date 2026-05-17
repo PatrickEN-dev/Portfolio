@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --c-linen: 245 241 234;
+  --c-espresso: 31 26 20;
+  --c-warmgray: 169 158 140;
+  --c-caramel: 139 94 52;
+  --c-sand: 232 220 200;
+  --c-ink: 31 26 20;
+  --c-ink-muted: 92 82 71;
+  --c-ink-soft: 169 158 140;
+  --ease-apple: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dark {
+  --c-linen: 15 13 10;
+  --c-espresso: 240 235 224;
+  --c-warmgray: 138 127 109;
+  --c-caramel: 216 152 96;
+  --c-sand: 42 34 24;
+  --c-ink: 240 235 224;
+  --c-ink-muted: 188 177 160;
+  --c-ink-soft: 138 127 109;
+}
+
+html {
+  background-color: rgb(var(--c-linen));
+  color: rgb(var(--c-espresso));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(var(--c-linen));
+  color: rgb(var(--c-espresso));
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+::selection {
+  background-color: rgb(var(--c-caramel));
+  color: rgb(var(--c-linen));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.85'/></svg>");
+}
+
+.dark .grain {
+  mix-blend-mode: screen;
+  opacity: 0.08;
+}
+
+.grain-strong {
+  opacity: 0.08;
+}

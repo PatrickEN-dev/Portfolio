@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "title": "Patrick Almeida — Full Stack Developer",
+    "description": "Desarrollador Full Stack con más de 4 años en FinTechs, CRMs y SaaS multi-tenant en producción. TypeScript, Next.js, NestJS, .NET y Python. Disponible para contrato o tiempo completo, remoto o híbrido.",
+    "ogTitle": "Patrick Almeida — Full Stack Developer & Arquitecto de Software",
+    "ogDescription": "Sistemas pensados como producto, construidos para escalar. 4+ años en FinTechs, CRMs y plataformas SaaS multi-tenant en producción, con clientes pagantes activos."
+  },
+  "ui": {
+    "downloadCV": "Descargar CV",
+    "viewProject": "Ver proyecto",
+    "repository": "Repositorio",
+    "viewProjects": "Ver proyectos",
+    "scrollHint": "scroll",
+    "findMeAt": "Encuéntrame en",
+    "and": "y",
+    "downloadMy": "Descarga mi",
+    "themeLight": "Cambiar a tema claro",
+    "themeDark": "Cambiar a tema oscuro",
+    "language": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Ingeniero & Arquitecto de Software",
+    "availability": "Disponible para nuevas oportunidades",
+    "factExperience": "4+ años comprobados",
+    "factStudy": "5 años de estudio técnico",
+    "factRemote": "Remoto o Híbrido",
+    "h1Line1": "Sistemas pensados",
+    "h1Line2": "como producto,",
+    "h1Line3": "construidos",
+    "h1Line4": "para escalar.",
+    "subtitle": "Full stack Node.js con foco en back-end y arquitectura de microservicios. Actuación en FinTechs, CRMs y SaaS multi-tenant en producción.",
+    "techList": "TypeScript · Next.js · NestJS · .NET · Python · Azure DevOps · AWS",
+    "location": "Botucatu — SP · Brasil",
+    "availabilityModel": "Contrato o Tiempo completo · Remoto o Híbrido (1x/mes)"
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "bioBefore": "Soy desarrollador full stack con más de cuatro años de experiencia. Crecí de Junior a Semisenior en entorno corporativo y construí dos SaaS propios en producción con clientes pagantes activos. Mi foco es construir sistemas que necesitan sobrevivir a ",
+    "bioHighlight": "producción real",
+    "bioAfter": ", sin espacio para el error.",
+    "summaryLabel": "Abierto a oportunidades",
+    "summaryFocus": "Back-end Node.js, arquitectura y sistemas en producción.",
+    "summaryDomain1": "FinTech",
+    "summaryDomain2": "SaaS",
+    "summaryDomain3": "CRM",
+    "summaryStackLabel": "Stack core",
+    "summaryWorkModel": "Contrato o Tiempo completo · Remoto o Híbrido",
+    "fichaCargo": "Cargo",
+    "fichaDominios": "Dominios",
+    "fichaModelo": "Modalidad",
+    "fichaLocalizacao": "Ubicación",
+    "fichaIdiomas": "Idiomas",
+    "fichaFormacao": "Formación",
+    "valueCargo": "Ingeniero & Arquitecto de Software",
+    "valueSpecialty1": "Back-end",
+    "valueSpecialty2": "Front-end",
+    "valueSpecialty3": "Full Stack",
+    "valueDominios": "FinTech · SaaS · CRM",
+    "valueModelo": "Contrato o Tiempo completo · Remoto o Híbrido",
+    "valueLocalizacao": "Botucatu — SP · Brasil",
+    "valueIdiomas": "Portugués (Nativo) · Inglés (Intermedio)",
+    "valueFormacao": "Licenciatura en Análisis y Desarrollo de Sistemas",
+    "valueFormacaoInst": "Estácio · Concluido Jul/2024",
+    "valueFormacao2": "Desarrollo Web Full Stack",
+    "valueFormacao2Inst": "Kenzie Academy",
+    "valueFormacao2Detail": "3000+ horas de clase en vivo · entregas semanales de proyectos",
+    "statsTitle": "En números",
+    "statYears": "años de experiencia",
+    "statClients": "clientes pagantes activos",
+    "statFintechs": "FinTechs en el currículum",
+    "statSaas": "SaaS en producción"
+  },
+  "projects": {
+    "eyebrow": "En producción",
+    "title": "Proyectos",
+    "intro": "1 SaaS en producción · 4 clientes pagantes activos · 1 showcase técnico",
+    "status": {
+      "production": "En producción",
+      "testing": "En pruebas",
+      "showcase": "Showcase"
+    },
+    "items": {
+      "coldmail": {
+        "tagline": "Plataforma SaaS B2B de cold mailing a gran escala con calentamiento automático de dominios, dashboard analítico de embudo de conversión y clasificación inteligente de leads por temperatura. Incluye gestión de campañas, plantillas, integración con LinkedIn y envíos programados.",
+        "metric": "3 clientes pagantes en producción"
+      },
+      "btBarber": {
+        "tagline": "Sistema SaaS multi-tenant para barberías con tres interfaces especializadas: cliente para agendamiento online, barbero para gestión de agenda y administrador para gestión operativa. Incluye módulo de e-commerce integrado para venta de productos, sistema de valoraciones y calendario de horarios.",
+        "metric": "1 cliente en operación · 3 en onboarding"
+      },
+      "bancoAgil": {
+        "tagline": "Sistema multi-agente de atención bancaria con cuatro agentes de IA especializados en triage, análisis de crédito, cotización de divisas y perfil financiero. Arquitectura RAG con OpenAI, validación de identidad por CPF y enrutamiento conversacional contextual entre agentes.",
+        "metric": "Showcase de arquitectura RAG multi-agente"
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Experiencia",
+    "title": "Trayectoria profesional",
+    "subtitle": "Del primer contrato como Junior a la arquitectura de FinTechs en producción.",
+    "currentBadge": "Actual",
+    "items": {
+      "sttart": {
+        "company": "Sttart Pay — Movimientos Financieros",
+        "role": "Full Stack Semisenior (Contrato)",
+        "period": "Feb/2026 — actualidad",
+        "bullets": [
+          "FinTech de movimientos financieros: PIX, TED, terminales de pago y operaciones con USDT (cripto).",
+          "Servicios back-end en Python sobre AWS Lambda; CI/CD con Azure DevOps en entorno regulado.",
+          "Foco en validación de transacciones, retry con backoff, observabilidad y seguridad del core."
+        ]
+      },
+      "freelancer": {
+        "company": "Freelancer / Autónomo",
+        "role": "Full Stack (Contrato)",
+        "period": "May/2024 — actualidad",
+        "bullets": [
+          "Actuación fin a fin en SaaS propios: requisitos, arquitectura, base de datos, deploy en Vercel/AWS y mantenimiento continuo.",
+          "Adquisición y onboarding de clientes pagantes en paralelo al desarrollo técnico, actuando en producto, soporte y billing.",
+          "Automatizaciones con N8N integrando APIs externas (LinkedIn, email, webhooks) y flujos de IA con OpenAI."
+        ]
+      },
+      "datacrazy": {
+        "company": "CRM Datacrazy",
+        "role": "Full Stack Junior → Semisenior (Contrato)",
+        "period": "Feb/2023 — Feb/2026",
+        "bullets": [
+          "Promovido a Semisenior en 2025 por consistencia de entrega y mérito técnico, tras 3 años en la empresa.",
+          "Microservicios con DDD y SOLID; bounded contexts y separación de responsabilidades en APIs Node.js/NestJS y C# .NET.",
+          "Integraciones REST/Webhook con WhatsApp Business e Instagram Graph API; soporte multi-tenant del CRM.",
+          "Pipelines de CI/CD en Docker, Kubernetes, GitHub Actions y Azure DevOps; entorno de staging con smoke tests."
+        ]
+      },
+      "fcs": {
+        "company": "FCS — Fluxo de Caixa Simples (AR Digital Labs)",
+        "role": "Full Stack Junior (Contrato)",
+        "period": "Jun/2024 — Ene/2025",
+        "bullets": [
+          "FinTech de gestión financiera empresarial para PyMEs, con flujo de caja, conciliación e informes.",
+          "Back-end serverless en .NET Core sobre AWS Lambda; cold starts mitigados con warm-up scheduler.",
+          "Refactor de consultas SQL con análisis de índices y corrección de N+1; ganancia de performance en dashboards críticos."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Stack técnico",
+    "title": "Back-end como especialidad, full stack como práctica.",
+    "categories": {
+      "languages": "Lenguajes",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "data": "Datos",
+      "devops": "DevOps & Cloud",
+      "architecture": "Arquitectura",
+      "ai": "IA & Automatización"
+    },
+    "items": {
+      "Microserviços": "Microservicios",
+      "Agentes": "Agentes"
+    }
+  },
+  "differentials": {
+    "eyebrow": "Diferenciales",
+    "title": "Lo que me diferencia.",
+    "items": {
+      "architecture": {
+        "title": "Arquitectura de Software",
+        "summary": "Pienso el sistema antes de codear. ¿Cómo va a escalar? ¿Dónde se rompe primero? ¿Cómo evoluciona sin reescribir todo?",
+        "body": "DDD con bounded contexts, separación SOLID en microservicios, comunicación asíncrona con colas, orquestación con Kubernetes, eventos vs comandos (CQRS cuando tiene sentido)."
+      },
+      "product": {
+        "title": "Visión de Producto",
+        "summary": "Entiendo el problema del negocio antes de elegir la solución técnica. El código sirve al producto, no al revés.",
+        "body": "Conversación con stakeholders, lectura de métricas y competencia, propuestas priorizadas por impacto. He construido 2 SaaS propios desde la idea hasta el cliente pagante."
+      },
+      "production": {
+        "title": "Producción & Confiabilidad",
+        "summary": "Sé qué necesita un sistema para sobrevivir en producción. Funcionar en localhost es el mínimo, mantenerlo en el aire es el trabajo.",
+        "body": "Validaciones de transacción, retry con backoff exponencial, idempotencia, logging estructurado, mitigación de cold starts serverless, smoke tests en staging, observabilidad de errores."
+      },
+      "leadership": {
+        "title": "Liderazgo Técnico",
+        "summary": "Lideré un equipo de devs, con sprints, tasks, dailies y responsabilidad de entrega.",
+        "body": "Conducción de sprints semanales, planificación y desglose de tasks en el board, dailies, code reviews y onboarding técnico de devs junior en entorno de contrato corporativo."
+      },
+      "ai": {
+        "title": "IA Aplicada & Automatización",
+        "summary": "Construyo sistemas con IA real, no solo uso ChatGPT. Ingeniería de flujo, integración y producto.",
+        "body": "Agentes multi-paso con OpenAI, arquitectura RAG con knowledge bases, validación de contexto, enrutamiento conversacional entre agentes especializados, automatizaciones N8N integrando APIs externas."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "closer": "¿Hablamos?",
+    "subtitle": "Respuesta en hasta 24h en días laborables. Abierto a entrevistas técnicas, charlas exploratorias o un café virtual.",
+    "labels": {
+      "Email": "Email",
+      "WhatsApp": "WhatsApp",
+      "LinkedIn": "LinkedIn",
+      "GitHub": "GitHub"
+    },
+    "footer": "© 2026 Patrick Almeida",
+    "footerRight": "Ingeniero & Arquitecto de Software"
+  }
+}
