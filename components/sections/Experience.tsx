@@ -7,7 +7,7 @@ export default async function Experience() {
   const t = await getTranslations("experience");
 
   return (
-    <section className="relative px-6 md:px-12 py-20 md:py-40">
+    <section className="relative px-6 md:px-12 py-20 md:py-40 overflow-hidden">
       <div className="mx-auto w-full max-w-5xl">
         <div className="mb-12 md:mb-24 max-w-3xl mx-auto text-left md:text-center">
           <SectionEyebrow className="mb-4 md:justify-center">{t("eyebrow")}</SectionEyebrow>

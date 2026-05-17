@@ -72,6 +72,8 @@ export const projects: readonly ProjectMeta[] = [
 
 export const differentialKeys = ["architecture", "product", "production", "leadership", "ai"] as const;
 
+export const forYouKeys = ["onboarding", "runtime", "business", "ownership"] as const;
+
 export const skillsCategories: readonly SkillCategory[] = [
   { key: "languages", items: ["JavaScript", "TypeScript", "C#", "Python"] },
   { key: "frontend", items: ["HTML", "CSS", "React", "Next.js", "Tailwind", "shadcn/ui", "Ant Design"] },

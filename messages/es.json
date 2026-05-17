@@ -163,6 +163,33 @@
       "Agentes": "Agentes"
     }
   },
+  "forYou": {
+    "eyebrow": "Por qué contratarme",
+    "title": "Cuatro motivos para considerar esta contratación.",
+    "subtitle": "Lo que este perfil aporta al resultado del equipo, más allá de lo que el currículum ya lista.",
+    "items": {
+      "onboarding": {
+        "scenario": "Entrega rápida en sistemas que aún no conozco.",
+        "quote": "Trabajar al mismo tiempo en ambiente corporativo regulado y en productos propios me acostumbró a entrar rápido en sistemas existentes. Leo el código, identifico reglas de negocio bajo presión y empiezo a producir temprano, con autonomía para investigar lo que falta.",
+        "evidence": "Para el equipo, eso significa menos tiempo de onboarding, menor coordinación operativa y más velocidad para desbloquear el backlog crítico."
+      },
+      "runtime": {
+        "scenario": "Cuida el sistema después de que sube.",
+        "quote": "La rutina no termina cuando la feature sube. Trato a diario con incidentes, comportamiento real de usuario, hotfixes y mantenimiento evolutivo. Eso cambia por completo cómo valido arquitectura, observabilidad y confiabilidad antes de considerar una feature terminada.",
+        "evidence": "Para el equipo, eso reduce retrabajo, regresiones y problemas escondidos que estallan semanas después."
+      },
+      "business": {
+        "scenario": "Evalúa el trade-off técnico con el costo de negocio en mente.",
+        "quote": "Ya tomé decisiones técnicas donde la opción más elegante perdía frente a la que servía al cliente en ese momento. Lidiar con cliente final, roadmap e impacto comercial directo creó el hábito de medir cada decisión por lo que entrega al negocio.",
+        "evidence": "Para el equipo, eso significa features más alineadas con impacto real y menos esfuerzo gastado en soluciones que no se convierten en resultado."
+      },
+      "ownership": {
+        "scenario": "Postura de quien lleva el producto hasta el final.",
+        "quote": "Construir SaaS propios en paralelo a contratos corporativos formó un sentido de responsabilidad continua por el resultado final. Ese hábito trae autonomía, priorización por valor y cuidado constante con lo que el usuario experimenta.",
+        "evidence": "Para el equipo, eso aporta un perfil que se compromete con el resultado colectivo, desde el alcance de la feature hasta cómo se comporta en la mano del usuario."
+      }
+    }
+  },
   "differentials": {
     "eyebrow": "Diferenciales",
     "title": "Lo que me diferencia.",

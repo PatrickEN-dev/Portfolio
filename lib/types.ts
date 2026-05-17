@@ -19,6 +19,8 @@ export type DifferentialKey =
   | "leadership"
   | "ai";
 
+export type ForYouKey = "onboarding" | "runtime" | "business" | "ownership";
+
 export type ContactKey = "Email" | "WhatsApp" | "LinkedIn" | "GitHub";
 
 export type ContactMeta = {

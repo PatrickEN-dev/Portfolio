@@ -9,7 +9,7 @@ export default async function About() {
   const t = await getTranslations("about");
 
   return (
-    <section className="relative px-6 md:px-12 py-20 md:py-32">
+    <section className="relative px-6 md:px-12 py-20 md:py-32 overflow-hidden">
       <div className="mx-auto w-full max-w-7xl">
         <SectionEyebrow className="mb-10 md:mb-12">{t("eyebrow")}</SectionEyebrow>
 

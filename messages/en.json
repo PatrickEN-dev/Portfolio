@@ -163,6 +163,33 @@
       "Agentes": "AI Agents"
     }
   },
+  "forYou": {
+    "eyebrow": "Why hire me",
+    "title": "Four reasons to consider this hire.",
+    "subtitle": "What this profile brings to the team's outcome, beyond what the résumé already lists.",
+    "items": {
+      "onboarding": {
+        "scenario": "Fast delivery in systems I don't know yet.",
+        "quote": "Working at the same time in a regulated corporate environment and on own products got me used to ramping up quickly in existing systems. I read the code, identify business rules under pressure and start shipping early, with autonomy to dig into what's missing.",
+        "evidence": "For the team, that means less onboarding time, less operational coordination and more speed to unblock critical backlog."
+      },
+      "runtime": {
+        "scenario": "Looks after the system after it goes live.",
+        "quote": "The routine doesn't end when a feature ships. I deal daily with incidents, real user behavior, hotfixes and ongoing maintenance. That fully reshapes how I validate architecture, observability and reliability before considering a feature finished.",
+        "evidence": "For the team, that reduces rework, regressions and hidden issues that blow up weeks later."
+      },
+      "business": {
+        "scenario": "Weighs the technical trade-off against the business cost.",
+        "quote": "I've made technical decisions where the more elegant choice lost to the one that actually served the customer at that moment. Dealing directly with end customers, roadmap and commercial impact built the habit of measuring each decision by what it delivers to the business.",
+        "evidence": "For the team, that means features more aligned with real impact and less effort spent on solutions that don't convert into outcome."
+      },
+      "ownership": {
+        "scenario": "The stance of someone who carries the product through.",
+        "quote": "Building own SaaS products alongside corporate contracts shaped a continuous sense of responsibility for the final result. That habit brings autonomy, prioritization by value and constant care for what the user experiences.",
+        "evidence": "For the team, that means a profile that commits to the collective outcome, from feature scope all the way to how it behaves in the user's hand."
+      }
+    }
+  },
   "differentials": {
     "eyebrow": "What sets me apart",
     "title": "What makes me different.",

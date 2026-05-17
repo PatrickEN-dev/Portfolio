@@ -163,6 +163,33 @@
       "Agentes": "Agentes"
     }
   },
+  "forYou": {
+    "eyebrow": "Por que me contratar",
+    "title": "Quatro motivos para considerar essa contratação.",
+    "subtitle": "O que esse perfil traz para o resultado do time, além do que o currículo já lista.",
+    "items": {
+      "onboarding": {
+        "scenario": "Entrega rápida em sistemas que ainda não conheço.",
+        "quote": "Trabalhar simultaneamente em ambiente corporativo regulado e em produtos próprios me acostumou a entrar rápido em sistemas existentes. Leio o código, identifico regras de negócio sob pressão e produzo cedo, com autonomia para investigar o que falta.",
+        "evidence": "Para o time, isso significa menos tempo de rampagem, menor coordenação operacional e mais velocidade para destravar o backlog crítico."
+      },
+      "runtime": {
+        "scenario": "Cuida do sistema depois que ele sobe.",
+        "quote": "A rotina não termina quando a feature sobe. Lido diariamente com incidentes, comportamento real de usuário, hotfixes e manutenção evolutiva. Isso muda completamente a forma como valido arquitetura, observabilidade e confiabilidade antes de considerar uma feature finalizada.",
+        "evidence": "Para o time, isso reduz retrabalho, regressões e problemas escondidos que explodem semanas depois."
+      },
+      "business": {
+        "scenario": "Avalia o trade-off técnico com o custo de negócio em mente.",
+        "quote": "Já tomei decisões técnicas onde a escolha mais elegante perdia para a que servia o cliente naquele momento. Lidar com cliente final, roadmap e impacto comercial direto criou o hábito de medir cada decisão pelo que ela entrega ao negócio.",
+        "evidence": "Para o time, isso significa features mais alinhadas com impacto real e menos esforço gasto em soluções que não convertem em resultado."
+      },
+      "ownership": {
+        "scenario": "Postura de quem leva o produto até o fim.",
+        "quote": "Construir SaaS próprios em paralelo a contratos corporativos formou um senso de responsabilidade contínua pelo resultado final. Esse hábito traz autonomia, priorização por valor e cuidado constante com o que o usuário experimenta.",
+        "evidence": "Para o time, isso traz um perfil que se compromete com o resultado coletivo, do escopo da feature até como ela se comporta na mão do usuário."
+      }
+    }
+  },
   "differentials": {
     "eyebrow": "Diferenciais",
     "title": "O que me diferencia.",

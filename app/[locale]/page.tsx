@@ -4,6 +4,7 @@ import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
 import Skills from "@/components/sections/Skills";
 import Differentials from "@/components/sections/Differentials";
+import ForYou from "@/components/sections/ForYou";
 import Contact from "@/components/sections/Contact";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import ThemeToggle from "@/components/ui/ThemeToggle";
@@ -22,6 +23,7 @@ export default function Page() {
       <Experience />
       <Differentials />
       <Skills />
+      <ForYou />
       <Contact />
       <BackToTop />
     </main>
