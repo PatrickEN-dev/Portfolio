@@ -16,7 +16,10 @@
     "downloadMy": "Download my",
     "themeLight": "Switch to light theme",
     "themeDark": "Switch to dark theme",
-    "language": "Language"
+    "language": "Language",
+    "backToTop": "Back to top",
+    "menu": "Menu",
+    "close": "Close"
   },
   "hero": {
     "eyebrow": "Software Engineer & Architect",

@@ -13,20 +13,20 @@ export default async function Projects() {
   };
 
   return (
-    <section id="projetos" className="relative px-6 md:px-12 py-24 md:py-40 bg-linen">
+    <section id="projetos" className="relative px-6 md:px-12 py-20 md:py-40 bg-linen">
       <div className="mx-auto w-full max-w-7xl">
-        <div className="flex items-end justify-between gap-8 mb-16 md:mb-24">
+        <div className="flex items-end justify-between gap-8 mb-12 md:mb-24">
           <div>
             <SectionEyebrow className="mb-4">{t("eyebrow")}</SectionEyebrow>
             <h2 className="font-display text-display-xl tracking-tightest">{t("title")}</h2>
-            <p className="mt-4 text-body-lg text-ink-muted">{t("intro")}</p>
+            <p className="mt-3 md:mt-4 text-[0.95rem] sm:text-body-lg text-ink-muted">{t("intro")}</p>
           </div>
           <div className="hidden md:block font-mono text-sm uppercase tracking-widest text-ink-soft">
             {String(projects.length).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}
           </div>
         </div>
 
-        <div className="grid gap-16 md:gap-24">
+        <div className="grid gap-12 md:gap-24">
           {projects.map((p, idx) => (
             <ProjectCard
               key={p.slug}

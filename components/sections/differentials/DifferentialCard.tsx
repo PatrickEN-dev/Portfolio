@@ -22,7 +22,7 @@ export default function DifferentialCard({ index, title, summary, body, icon }: 
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: index * 0.06 }}
       className={cn(
         cardClasses({ padding: "lg" }),
-        "group relative flex flex-col min-h-[320px]",
+        "group relative flex flex-col min-h-[260px] md:min-h-[320px]",
       )}
     >
       <div className="flex items-center justify-between">

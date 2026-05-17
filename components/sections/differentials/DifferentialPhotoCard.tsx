@@ -3,7 +3,7 @@ import { profile } from "@/lib/data";
 
 export default function DifferentialPhotoCard() {
   return (
-    <div className="relative min-h-[320px] overflow-hidden rounded-2xl bg-sand ring-1 ring-inset ring-espresso/5">
+    <div className="relative min-h-[260px] md:min-h-[320px] overflow-hidden rounded-2xl bg-sand ring-1 ring-inset ring-espresso/5">
       <SafeImage
         src={profile.headshot}
         alt={profile.shortName}

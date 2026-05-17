@@ -30,9 +30,9 @@ export default async function Differentials() {
   const t = await getTranslations("differentials");
 
   return (
-    <section className="relative px-6 md:px-12 py-24 md:py-32 bg-linen">
+    <section className="relative px-6 md:px-12 py-20 md:py-32 bg-linen">
       <div className="mx-auto w-full max-w-7xl">
-        <div className="mb-12 md:mb-16">
+        <div className="mb-10 md:mb-16">
           <SectionEyebrow className="mb-4">{t("eyebrow")}</SectionEyebrow>
           <h2 className="font-display text-display-lg tracking-tightest max-w-3xl">
             {t("title")}

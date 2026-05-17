@@ -32,7 +32,7 @@ export default function ExperienceItem({
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-10%" }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="relative mb-16 md:mb-24"
+      className="relative mb-12 md:mb-24"
     >
       <div className="absolute z-10 left-4 md:left-1/2 top-0 -translate-x-1/2">
         <motion.span
@@ -54,7 +54,7 @@ export default function ExperienceItem({
 
       <div
         className={cn(
-          "pl-12 pt-14 md:pl-0 md:pt-0",
+          "pl-10 sm:pl-12 pt-12 sm:pt-14 md:pl-0 md:pt-0",
           !reversed && "md:mr-[50%] md:pr-10 md:pt-10 md:text-right",
           reversed && "md:ml-[50%] md:pl-10 md:pt-10 md:text-left"
         )}

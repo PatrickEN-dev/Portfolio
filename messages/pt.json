@@ -16,7 +16,10 @@
     "downloadMy": "Baixe meu",
     "themeLight": "Mudar para tema claro",
     "themeDark": "Mudar para tema escuro",
-    "language": "Idioma"
+    "language": "Idioma",
+    "backToTop": "Voltar ao topo",
+    "menu": "Menu",
+    "close": "Fechar"
   },
   "hero": {
     "eyebrow": "Engenheiro & Arquiteto de Software",

@@ -7,12 +7,12 @@ export default async function Experience() {
   const t = await getTranslations("experience");
 
   return (
-    <section className="relative px-6 md:px-12 py-24 md:py-40">
+    <section className="relative px-6 md:px-12 py-20 md:py-40">
       <div className="mx-auto w-full max-w-5xl">
-        <div className="mb-16 md:mb-24 max-w-3xl mx-auto text-left md:text-center">
+        <div className="mb-12 md:mb-24 max-w-3xl mx-auto text-left md:text-center">
           <SectionEyebrow className="mb-4 md:justify-center">{t("eyebrow")}</SectionEyebrow>
           <h2 className="font-display text-display-lg tracking-tightest">{t("title")}</h2>
-          <p className="mt-5 text-body-lg text-ink-muted">{t("subtitle")}</p>
+          <p className="mt-4 md:mt-5 text-[0.95rem] sm:text-body-lg text-ink-muted">{t("subtitle")}</p>
         </div>
 
         <ol className="relative">

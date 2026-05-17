@@ -27,7 +27,7 @@ export default function LocaleSwitcher() {
   return (
     <div
       className={cn(
-        "fixed top-5 right-20 z-50 flex items-center gap-0.5 rounded-full border border-espresso/10 dark:border-linen/15 bg-linen/80 dark:bg-espresso/30 backdrop-blur-md px-1 py-1",
+        "fixed top-[max(1.25rem,env(safe-area-inset-top))] right-[max(4.5rem,calc(env(safe-area-inset-right)+3.75rem))] z-50 flex items-center gap-0.5 rounded-full border border-espresso/10 dark:border-linen/15 bg-linen/80 dark:bg-espresso/30 backdrop-blur-md px-1 py-1",
         pending && "opacity-70"
       )}
       aria-label="Language switcher"

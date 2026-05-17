@@ -8,6 +8,7 @@ import Contact from "@/components/sections/Contact";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import LocaleSwitcher from "@/components/ui/LocaleSwitcher";
+import BackToTop from "@/components/ui/BackToTop";
 
 export default function Page() {
   return (
@@ -22,6 +23,7 @@ export default function Page() {
       <Differentials />
       <Skills />
       <Contact />
+      <BackToTop />
     </main>
   );
 }

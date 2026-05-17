@@ -16,11 +16,11 @@ export default async function Skills() {
   }));
 
   return (
-    <section className="relative px-6 md:px-12 py-24 md:py-40">
+    <section className="relative px-6 md:px-12 py-20 md:py-40">
       <div className="mx-auto w-full max-w-7xl">
         <SectionEyebrow className="mb-4">{t("eyebrow")}</SectionEyebrow>
 
-        <h2 className="font-display text-display-lg tracking-tightest max-w-3xl mb-16">
+        <h2 className="font-display text-display-lg tracking-tightest max-w-3xl mb-12 md:mb-16">
           {t("title")}
         </h2>
 

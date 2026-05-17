@@ -9,13 +9,13 @@ export default async function About() {
   const t = await getTranslations("about");
 
   return (
-    <section className="relative px-6 md:px-12 py-24 md:py-32">
+    <section className="relative px-6 md:px-12 py-20 md:py-32">
       <div className="mx-auto w-full max-w-7xl">
-        <SectionEyebrow className="mb-12">{t("eyebrow")}</SectionEyebrow>
+        <SectionEyebrow className="mb-10 md:mb-12">{t("eyebrow")}</SectionEyebrow>
 
-        <div className="grid gap-10 md:gap-16 md:grid-cols-[1.35fr_1fr] items-start">
+        <div className="grid gap-8 md:gap-16 md:grid-cols-[1.35fr_1fr] items-start">
           <SlideIn from="left">
-            <p className="font-display text-2xl md:text-3xl leading-snug text-ink max-w-xl pt-2">
+            <p className="font-display text-xl sm:text-2xl md:text-3xl leading-snug text-ink max-w-xl pt-2">
               {t("bioBefore")}
               <span className="italic text-caramel">{t("bioHighlight")}</span>
               {t("bioAfter")}
@@ -37,7 +37,7 @@ export default async function About() {
           </SlideIn>
         </div>
 
-        <div className="mt-20 md:mt-24">
+        <div className="mt-14 md:mt-24">
           <AboutFichaTecnica
             t={{
               cargo: t("fichaCargo"),
@@ -63,7 +63,7 @@ export default async function About() {
           />
         </div>
 
-        <div className="mt-16 md:mt-20">
+        <div className="mt-12 md:mt-20">
           <AboutStats />
         </div>
       </div>

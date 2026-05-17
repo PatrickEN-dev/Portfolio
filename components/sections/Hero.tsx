@@ -18,17 +18,17 @@ export default async function Hero() {
   const email = contacts.find((c) => c.key === "Email");
 
   return (
-    <section className="relative grid min-h-screen md:grid-cols-2 lg:grid-cols-[1.05fr_1fr]">
-      <div className="relative flex flex-col justify-between p-8 sm:p-12 lg:p-16 xl:p-20 min-h-screen order-2 md:order-1 bg-linen overflow-hidden">
+    <section className="relative grid min-h-[100svh] md:min-h-screen md:grid-cols-2 lg:grid-cols-[1.05fr_1fr]">
+      <div className="relative flex flex-col justify-between px-6 pt-[max(5rem,calc(env(safe-area-inset-top)+4rem))] pb-10 sm:p-12 lg:p-16 xl:p-20 min-h-[100svh] md:min-h-screen order-2 md:order-1 bg-linen overflow-hidden">
         <div className="grain pointer-events-none absolute inset-0 opacity-[0.04]" />
 
-        <div className="relative z-10 flex flex-col gap-5">
+        <div className="relative z-10 flex flex-col gap-4 sm:gap-5">
           <div className="font-mono text-label-xs uppercase text-ink-soft flex items-center gap-2">
             <span className="text-caramel">{"</>"}</span>
             {profile.shortName}
           </div>
 
-          <span className="inline-flex w-fit items-center gap-3 rounded-full border border-emerald-600/25 bg-emerald-600/[0.06] px-4 py-2 text-sm font-medium text-ink">
+          <span className="inline-flex w-fit items-center gap-3 rounded-full border border-emerald-600/25 bg-emerald-600/[0.06] px-3.5 py-1.5 sm:px-4 sm:py-2 text-[0.8rem] sm:text-sm font-medium text-ink">
             <span className="relative flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75 motion-safe:animate-ping" />
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-600" />
@@ -36,7 +36,7 @@ export default async function Hero() {
             {t("availability")}
           </span>
 
-          <div className="font-mono text-[0.7rem] uppercase tracking-widest text-ink-soft flex flex-wrap items-center gap-x-2.5 gap-y-1.5">
+          <div className="font-mono text-[0.65rem] sm:text-[0.7rem] uppercase tracking-widest text-ink-soft flex flex-wrap items-center gap-x-2.5 gap-y-1.5">
             <span>{t("factExperience")}</span>
             <span className="text-ink-soft/40" aria-hidden>·</span>
             <span>{t("factStudy")}</span>
@@ -45,17 +45,17 @@ export default async function Hero() {
           </div>
         </div>
 
-        <div className="relative z-10 max-w-xl py-12 md:py-0">
-          <h1 className="font-display tracking-tightest leading-[0.95] text-[clamp(2.5rem,5.5vw,5.5rem)] font-bold">
+        <div className="relative z-10 max-w-xl py-10 sm:py-12 md:py-0">
+          <h1 className="font-display tracking-tightest leading-[0.95] text-[clamp(2.25rem,9vw,5.5rem)] font-bold">
             <RevealText as="span" text={t("h1Line1")} className="block" byWord />
             <RevealText as="span" text={t("h1Line2")} className="block" delay={0.18} byWord />
             <RevealText as="span" text={t("h1Line3")} className="block text-caramel" delay={0.36} byWord />
             <RevealText as="span" text={t("h1Line4")} className="block text-caramel" delay={0.5} byWord />
           </h1>
 
-          <p className="mt-8 max-w-md text-body-lg text-ink-muted">{t("subtitle")}</p>
+          <p className="mt-6 sm:mt-8 max-w-md text-[0.95rem] sm:text-body-lg text-ink-muted">{t("subtitle")}</p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-3">
+          <div className="mt-8 sm:mt-10 flex flex-wrap items-center gap-2.5 sm:gap-3">
             <CTAButton
               href={getCvHref(locale)}
               variant="primary"
@@ -100,7 +100,7 @@ export default async function Hero() {
         </div>
       </div>
 
-      <div className="relative h-[55vh] md:h-screen md:sticky md:top-0 order-1 md:order-2 overflow-hidden bg-sand">
+      <div className="relative h-[44vh] sm:h-[55vh] md:h-screen md:sticky md:top-0 order-1 md:order-2 overflow-hidden bg-sand">
         <Image
           src={profile.portrait}
           alt={profile.shortName}
@@ -111,7 +111,8 @@ export default async function Hero() {
           priority
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-espresso/15 via-transparent to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-linen/30 to-transparent md:from-linen md:via-linen/40 md:w-12" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-linen via-linen/60 to-transparent md:hidden" />
+        <div className="pointer-events-none hidden md:block absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-linen via-linen/40 to-transparent" />
       </div>
     </section>
   );

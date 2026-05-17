@@ -39,7 +39,7 @@ export default function ProjectCard({
       viewport={{ once: true, margin: "-10%" }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className={cn(
-        "grid gap-8 md:gap-12 md:grid-cols-[1.4fr_1fr] items-center",
+        "grid gap-6 md:gap-12 md:grid-cols-[1.4fr_1fr] items-center",
         reversed && "md:grid-cols-[1fr_1.4fr]"
       )}
     >
@@ -57,17 +57,17 @@ export default function ProjectCard({
         </div>
 
         <h3 className="font-display text-display-md tracking-tighter2">{project.name}</h3>
-        <p className="mt-4 text-body-lg text-ink-muted max-w-xl">{tagline}</p>
+        <p className="mt-3 md:mt-4 text-[0.95rem] sm:text-body-lg text-ink-muted max-w-xl">{tagline}</p>
 
-        <div className="mt-5 font-display text-display-sm text-caramel">{metric}</div>
+        <div className="mt-4 md:mt-5 font-display text-display-sm text-caramel">{metric}</div>
 
-        <div className="mt-6 flex flex-wrap gap-2">
+        <div className="mt-5 md:mt-6 flex flex-wrap gap-1.5 md:gap-2">
           {project.stack.map((t) => {
             const Icon = getTechIcon(t);
             return (
               <span
                 key={t}
-                className="inline-flex items-center gap-1.5 font-mono text-[0.7rem] uppercase tracking-widest text-espresso/75 bg-espresso/5 px-2.5 py-1 rounded-full"
+                className="inline-flex items-center gap-1.5 font-mono text-[0.65rem] md:text-[0.7rem] uppercase tracking-widest text-espresso/75 bg-espresso/5 px-2 md:px-2.5 py-1 rounded-full"
               >
                 <Icon className="h-3.5 w-3.5 text-caramel" strokeWidth={1.7} />
                 {t}
@@ -76,7 +76,7 @@ export default function ProjectCard({
           })}
         </div>
 
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mt-6 md:mt-8 flex flex-wrap gap-2.5 md:gap-3">
           {project.liveHref && (
             <CTAButton
               href={project.liveHref}
