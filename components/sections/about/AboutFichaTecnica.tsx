@@ -32,6 +32,20 @@ type Translations = {
   valueFormacao2Detail: string;
 };
 
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.05, delayChildren: 0.05 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 18 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } },
+};
+
 export default function AboutFichaTecnica({ t }: { t: Translations }) {
   const items: FichaItem[] = [
     {
@@ -98,14 +112,17 @@ export default function AboutFichaTecnica({ t }: { t: Translations }) {
   ];
 
   return (
-    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
-      {items.map(({ label, icon: Icon, body }, i) => (
+    <motion.ul
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-10%" }}
+      variants={container}
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"
+    >
+      {items.map(({ label, icon: Icon, body }) => (
         <motion.li
           key={label}
-          initial={{ opacity: 0, y: 18 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: i * 0.05 }}
+          variants={item}
           className={cardClasses({ padding: "sm" })}
         >
           <div className="flex items-center gap-2 mb-3 font-mono text-xs uppercase tracking-widest text-ink-soft">
@@ -115,6 +132,6 @@ export default function AboutFichaTecnica({ t }: { t: Translations }) {
           {body}
         </motion.li>
       ))}
-    </ul>
+    </motion.ul>
   );
 }

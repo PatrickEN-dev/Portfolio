@@ -11,12 +11,24 @@ export default function BackToTop() {
   const t = useTranslations("ui");
 
   useEffect(() => {
-    const onScroll = () => {
-      setVisible(window.scrollY > window.innerHeight * 0.9);
+    const sentinel = document.createElement("div");
+    sentinel.setAttribute("aria-hidden", "true");
+    sentinel.style.cssText =
+      "position:absolute;top:90vh;left:0;width:1px;height:1px;pointer-events:none;";
+    document.body.appendChild(sentinel);
+
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry) setVisible(!entry.isIntersecting);
+      },
+      { threshold: 0 },
+    );
+    obs.observe(sentinel);
+
+    return () => {
+      obs.disconnect();
+      sentinel.remove();
     };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const handleClick = () => {
