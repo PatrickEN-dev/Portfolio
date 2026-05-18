@@ -35,34 +35,18 @@ export default function SkillCategoryCard({ label, index, items }: Props) {
         {items.map(({ raw, display }) => {
           const { icon: Icon, color } = getTechSpec(raw);
           return (
-            <motion.li
+            <li
               key={raw}
-              whileHover="hover"
-              initial="rest"
-              animate="rest"
               className="group flex items-center gap-3 rounded-lg px-2 py-2 cursor-default"
+              style={{ ["--tech-color" as string]: color }}
             >
-              <motion.span
-                variants={{
-                  rest: { scale: 1, color: "rgb(var(--c-espresso) / 0.78)" },
-                  hover: { scale: 1.12, color },
-                }}
-                transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                className="inline-flex h-8 w-8 items-center justify-center shrink-0"
-              >
+              <span className="inline-flex h-8 w-8 items-center justify-center shrink-0 text-espresso/[0.78] transition-[color,transform] duration-300 ease-apple will-change-transform group-hover:scale-[1.12] group-hover:[color:var(--tech-color)]">
                 <Icon className="h-7 w-7" />
-              </motion.span>
-              <motion.span
-                variants={{
-                  rest: { x: 0, fontWeight: 500 },
-                  hover: { x: 2, fontWeight: 600 },
-                }}
-                transition={{ duration: 0.25 }}
-                className="text-[0.95rem] text-ink leading-tight"
-              >
+              </span>
+              <span className="text-[0.95rem] text-ink leading-tight font-medium transition-transform duration-300 ease-apple group-hover:translate-x-0.5">
                 {display}
-              </motion.span>
-            </motion.li>
+              </span>
+            </li>
           );
         })}
       </ul>

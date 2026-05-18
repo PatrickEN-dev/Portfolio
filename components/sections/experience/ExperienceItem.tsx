@@ -15,6 +15,8 @@ type Props = {
   currentBadge: string;
 };
 
+const EASE = [0.22, 1, 0.36, 1] as const;
+
 export default function ExperienceItem({
   entry,
   index,
@@ -26,20 +28,36 @@ export default function ExperienceItem({
 }: Props) {
   const reversed = index % 2 === 1;
 
+  const container = {
+    hidden: { opacity: 0, x: reversed ? 60 : -60 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.7,
+        ease: EASE,
+        when: "beforeChildren",
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const badge = {
+    hidden: { scale: 0.85, opacity: 0 },
+    visible: { scale: 1, opacity: 1, transition: { duration: 0.45, ease: EASE } },
+  };
+
   return (
     <motion.li
-      initial={{ opacity: 0, x: reversed ? 60 : -60 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true, margin: "-10%" }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      variants={container}
       className="relative mb-12 md:mb-24"
     >
       <div className="absolute z-10 left-4 md:left-1/2 top-0 -translate-x-1/2">
         <motion.span
-          initial={{ scale: 0.85, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+          variants={badge}
           className={cn(
             "inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 font-mono text-[0.7rem] uppercase tracking-widest whitespace-nowrap shadow-sm",
             entry.current

@@ -24,12 +24,39 @@ export default function ScenarioPanel({
 }: Props) {
   const reduced = useReducedMotion();
 
+  const container = {
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.12, delayChildren: 0.05 },
+    },
+  };
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: reduced ? 0 : 18 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE } },
+  };
+
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.7, ease: EASE } },
+  };
+
+  const slideX = {
+    hidden: { opacity: 0, x: reduced ? 0 : 18 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: EASE } },
+  };
+
+  const grow = {
+    hidden: { scaleX: 0 },
+    visible: { scaleX: 1, transition: { duration: 0.85, ease: EASE } },
+  };
+
   return (
     <motion.article
-      initial={{ opacity: 0, y: reduced ? 0 : 28 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true, margin: "-10%" }}
-      transition={{ duration: 0.6, ease: EASE }}
+      variants={container}
       className={`grid grid-cols-1 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-7 md:gap-14 py-12 md:py-16 ${
         isLast ? "" : "border-b border-espresso/10"
       }`}
@@ -37,10 +64,7 @@ export default function ScenarioPanel({
       <div className="relative">
         <motion.div
           aria-hidden
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.7, ease: EASE, delay: 0.1 }}
+          variants={fadeIn}
           className="font-mono italic text-[clamp(4rem,7vw,5.5rem)] leading-none tracking-tighter2 text-caramel/25 select-none mb-3 md:mb-5"
         >
           {number}
@@ -52,10 +76,7 @@ export default function ScenarioPanel({
 
       <div className="flex flex-col gap-6 md:gap-8 md:pt-[clamp(1rem,2vw,3rem)]">
         <motion.p
-          initial={{ opacity: 0, y: reduced ? 0 : 8 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.7, ease: EASE, delay: 0.2 }}
+          variants={fadeUp}
           className="text-[1.05rem] md:text-body-lg leading-relaxed text-ink-muted"
         >
           <span aria-hidden className="font-display text-2xl md:text-3xl leading-none text-caramel mr-1 align-[-0.15em]">
@@ -69,19 +90,13 @@ export default function ScenarioPanel({
 
         <motion.div
           aria-hidden
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.85, ease: EASE, delay: 0.35 }}
-          style={{ transformOrigin: "left center" }}
+          variants={grow}
+          style={{ transformOrigin: "left center", willChange: "transform" }}
           className="h-px bg-gradient-to-r from-caramel via-caramel/35 to-transparent"
         />
 
         <motion.div
-          initial={{ opacity: 0, x: reduced ? 0 : 18 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.6, ease: EASE, delay: 0.5 }}
+          variants={slideX}
           className="flex items-start gap-4"
         >
           <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-caramel/12 text-caramel ring-1 ring-inset ring-caramel/20">

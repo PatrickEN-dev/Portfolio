@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --c-linen: 245 241 234;
-  --c-espresso: 31 26 20;
-  --c-warmgray: 169 158 140;
-  --c-caramel: 139 94 52;
-  --c-sand: 232 220 200;
-  --c-ink: 31 26 20;
-  --c-ink-muted: 92 82 71;
-  --c-ink-soft: 169 158 140;
+  --c-linen: 230 224 213;
+  --c-espresso: 26 22 17;
+  --c-warmgray: 150 138 120;
+  --c-caramel: 125 84 46;
+  --c-sand: 215 200 178;
+  --c-ink: 26 22 17;
+  --c-ink-muted: 78 68 58;
+  --c-ink-soft: 150 138 120;
   --ease-apple: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -115,5 +115,16 @@ body {
 @media (max-width: 767px) {
   html {
     -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 1400px;
+}
+
+@media (min-width: 768px) {
+  .cv-auto {
+    contain-intrinsic-size: 1px 1800px;
   }
 }

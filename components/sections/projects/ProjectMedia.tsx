@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { getTechIcon } from "@/lib/tech-icons";
 import type { ProjectMeta } from "@/lib/types";
 import ProjectStatusBadge from "./ProjectStatusBadge";
@@ -34,12 +35,14 @@ export default function ProjectMedia({ project, statusLabel }: Props) {
 
       <div className="relative aspect-[16/10] bg-sand">
         {!imgError ? (
-          /* eslint-disable-next-line @next/next/no-img-element */
-          <img
+          <Image
             src={project.image}
             alt={`Screenshot ${project.name}`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 60vw, 720px"
+            quality={80}
             loading="lazy"
-            className="absolute inset-0 h-full w-full object-contain"
+            className="object-contain"
             onError={() => setImgError(true)}
           />
         ) : (

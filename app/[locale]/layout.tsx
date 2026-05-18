@@ -19,7 +19,7 @@ const OG_LOCALE: Record<string, string> = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F5F1EA" },
+    { media: "(prefers-color-scheme: light)", color: "#E6E0D5" },
     { media: "(prefers-color-scheme: dark)", color: "#0F0D0A" },
   ],
   width: "device-width",

@@ -16,7 +16,7 @@ export default async function Skills() {
   }));
 
   return (
-    <section className="relative px-6 md:px-12 py-20 md:py-40">
+    <section className="cv-auto relative px-6 md:px-12 py-20 md:py-40">
       <div className="mx-auto w-full max-w-7xl">
         <SectionEyebrow className="mb-4">{t("eyebrow")}</SectionEyebrow>
 

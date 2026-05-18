@@ -21,7 +21,7 @@ export default async function Contact() {
   const locale = (await getLocale()) as AppLocale;
 
   return (
-    <section className="relative px-6 md:px-12 py-20 md:py-32 bg-espresso text-linen overflow-hidden">
+    <section className="cv-auto relative px-6 md:px-12 py-20 md:py-32 bg-espresso text-linen overflow-hidden">
       <div className="grain grain-strong" />
 
       <div className="relative mx-auto w-full max-w-7xl">
@@ -80,7 +80,7 @@ export default async function Contact() {
                     </span>
                     <span className="text-sm sm:text-base md:text-body-lg truncate">{c.value}</span>
                   </span>
-                  <ArrowUpRight className="h-4 w-4 shrink-0 text-linen/40 transition-all duration-300 ease-apple group-hover:text-caramel group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <ArrowUpRight className="h-4 w-4 shrink-0 text-linen/40 transition-[transform,color] duration-300 ease-apple group-hover:text-caramel group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
               </li>
             );

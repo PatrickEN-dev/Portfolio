@@ -44,15 +44,6 @@ const config: Config = {
         "body-lg": ["clamp(1rem, 1.15vw, 1.15rem)", { lineHeight: "1.55" }],
         "label-xs": ["0.7rem", { lineHeight: "1.2", letterSpacing: "0.14em" }],
       },
-      keyframes: {
-        "drift-slow": {
-          "0%, 100%": { transform: "translate3d(0,0,0) scale(1)" },
-          "50%": { transform: "translate3d(2%,-1%,0) scale(1.03)" },
-        },
-      },
-      animation: {
-        "drift-slow": "drift-slow 30s ease-in-out infinite",
-      },
     },
   },
   plugins: [],

@@ -34,7 +34,7 @@ export default function CTAButton({
       target={external ? "_blank" : undefined}
       rel={external ? "noopener noreferrer" : undefined}
       className={cn(
-        "group inline-flex items-center gap-2.5 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 ease-apple",
+        "group inline-flex items-center gap-2.5 rounded-full px-6 py-3 text-sm font-medium transition-[transform,color,border-color,background-color] duration-300 ease-apple",
         VARIANT_CLASSES[variant],
         className,
       )}

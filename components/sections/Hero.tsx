@@ -107,8 +107,9 @@ export default async function Hero() {
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover object-top"
-          quality={100}
+          quality={85}
           priority
+          fetchPriority="high"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-espresso/15 via-transparent to-transparent" />
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-linen via-linen/60 to-transparent md:hidden" />

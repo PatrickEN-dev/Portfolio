@@ -19,7 +19,7 @@ export default async function ForYou() {
   const t = await getTranslations("forYou");
 
   return (
-    <section className="relative px-6 md:px-12 py-20 md:py-32 bg-sand overflow-hidden">
+    <section className="cv-auto relative px-6 md:px-12 py-20 md:py-32 bg-sand overflow-hidden">
       <div className="grain pointer-events-none absolute inset-0 opacity-[0.05]" />
 
       <div className="relative mx-auto w-full max-w-5xl">

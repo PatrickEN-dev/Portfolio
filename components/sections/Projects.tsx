@@ -13,7 +13,7 @@ export default async function Projects() {
   };
 
   return (
-    <section id="projetos" className="relative px-6 md:px-12 py-20 md:py-40 bg-linen overflow-hidden">
+    <section id="projetos" className="cv-auto relative px-6 md:px-12 py-20 md:py-40 bg-linen overflow-hidden">
       <div className="mx-auto w-full max-w-7xl">
         <div className="flex items-end justify-between gap-8 mb-12 md:mb-24">
           <div>

@@ -32,7 +32,7 @@ export default function IconCircleButton({
       rel={external ? "noopener noreferrer" : undefined}
       aria-label={label}
       className={cn(
-        "group flex h-12 w-12 items-center justify-center rounded-full border transition-all duration-300 ease-apple hover:-translate-y-0.5",
+        "group flex h-12 w-12 items-center justify-center rounded-full border transition-[transform,color,border-color] duration-300 ease-apple hover:-translate-y-0.5",
         VARIANT_CLASSES[variant],
         className,
       )}
