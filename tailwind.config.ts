@@ -20,6 +20,8 @@ const config: Config = {
           muted: "rgb(var(--c-ink-muted) / <alpha-value>)",
           soft: "rgb(var(--c-ink-soft) / <alpha-value>)",
         },
+        "inverse-bg": "rgb(var(--c-inverse-bg) / <alpha-value>)",
+        "inverse-fg": "rgb(var(--c-inverse-fg) / <alpha-value>)",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "ui-sans-serif", "system-ui", "sans-serif"],

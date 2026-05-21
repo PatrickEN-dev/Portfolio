@@ -11,6 +11,8 @@
   --c-ink: 26 22 17;
   --c-ink-muted: 78 68 58;
   --c-ink-soft: 150 138 120;
+  --c-inverse-bg: 15 13 10;
+  --c-inverse-fg: 240 235 224;
   --ease-apple: cubic-bezier(0.22, 1, 0.36, 1);
 }
 

@@ -27,11 +27,12 @@ Defined as RGB triplets in [app/globals.css](app/globals.css#L5-L26), exposed to
 | Token       | Light       | Dark        | Usage                      |
 | ----------- | ----------- | ----------- | -------------------------- |
 | `linen`     | `#E6E0D5`   | `#0F0D0A`   | base background            |
-| `espresso`  | `#1A1611`   | `#F0EBE0`   | text / inverted bg         |
+| `espresso`  | `#1A1611`   | `#F0EBE0`   | text                       |
 | `caramel`   | `#7D542E`   | `#D89860`   | accent                     |
 | `sand`      | `#D7C8B2`   | `#2A2218`   | secondary surface          |
 | `warmgray`  | `#968A78`   | `#8A7F6D`   | tertiary text              |
 | `ink/muted/soft` | `#1A1611` / `#4E443A` / `#968A78` | `#F0EBE0` / `#BCB1A0` / `#8A7F6D` | body / muted / decorative |
+| `inverse-bg` / `inverse-fg` | `#0F0D0A` / `#F0EBE0` | `#0F0D0A` / `#F0EBE0` | always-dark surface (Contact closer) — does NOT swap with theme |
 
 - Easing: `cubic-bezier(0.22, 1, 0.36, 1)` (exposed as `transition-timing: apple`)
 - Display sizes (`display-xl`/`lg`/`md`/`sm`) use `clamp()` for fluid type — see [tailwind.config.ts:40-46](tailwind.config.ts#L40-L46)
