@@ -54,6 +54,7 @@ export default async function About() {
               valueModelo: t("valueModelo"),
               valueLocalizacao: t("valueLocalizacao"),
               valueIdiomas: t("valueIdiomas"),
+              valueIdiomasCert: t("valueIdiomasCert"),
               valueFormacao: t("valueFormacao"),
               valueFormacaoInst: t("valueFormacaoInst"),
               valueFormacao2: t("valueFormacao2"),

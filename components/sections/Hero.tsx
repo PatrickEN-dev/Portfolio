@@ -27,22 +27,6 @@ export default async function Hero() {
             <span className="text-caramel">{"</>"}</span>
             {profile.shortName}
           </div>
-
-          <span className="inline-flex w-fit items-center gap-3 rounded-full border border-emerald-600/25 bg-emerald-600/[0.06] px-3.5 py-1.5 sm:px-4 sm:py-2 text-[0.8rem] sm:text-sm font-medium text-ink">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75 motion-safe:animate-ping" />
-              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-600" />
-            </span>
-            {t("availability")}
-          </span>
-
-          <div className="font-mono text-[0.65rem] sm:text-[0.7rem] uppercase tracking-widest text-ink-soft flex flex-wrap items-center gap-x-2.5 gap-y-1.5">
-            <span>{t("factExperience")}</span>
-            <span className="text-ink-soft/40" aria-hidden>·</span>
-            <span>{t("factStudy")}</span>
-            <span className="text-ink-soft/40" aria-hidden>·</span>
-            <span>{t("factRemote")}</span>
-          </div>
         </div>
 
         <div className="relative z-10 max-w-xl py-10 sm:py-12 md:py-0">

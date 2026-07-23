@@ -23,10 +23,6 @@
   },
   "hero": {
     "eyebrow": "Engenheiro & Arquiteto de Software",
-    "availability": "Disponível para novas oportunidades",
-    "factExperience": "4+ anos comprovados",
-    "factStudy": "5 anos de estudo técnico",
-    "factRemote": "Remoto ou Híbrido",
     "h1Line1": "Sistemas pensados",
     "h1Line2": "como produto,",
     "h1Line3": "construídos",
@@ -61,7 +57,8 @@
     "valueDominios": "FinTech · SaaS · CRM",
     "valueModelo": "PJ ou CLT · Remoto ou Híbrido",
     "valueLocalizacao": "Botucatu — SP · Brasil",
-    "valueIdiomas": "Português (Nativo) · Inglês (Intermediário)",
+    "valueIdiomas": "Português (Nativo) · Inglês (Avançado)",
+    "valueIdiomasCert": "Certificado C2 Proficient — EF SET",
     "valueFormacao": "Análise e Desenvolvimento de Sistemas",
     "valueFormacaoInst": "Estácio · Concluído Jul/2024",
     "valueFormacao2": "Desenvolvimento Web Full Stack",
@@ -103,10 +100,21 @@
     "subtitle": "Os marcos e conquistas que estruturam minha trajetória até aqui.",
     "currentBadge": "Atual",
     "items": {
+      "paytheory": {
+        "company": "Pay Theory",
+        "role": "QA & DevOps Engineer (PJ)",
+        "period": "Jul/2026 — atual",
+        "bullets": [
+          "FinTech americana de infraestrutura de pagamentos (payments-as-a-service) para plataformas de software.",
+          "Qualidade e confiabilidade de releases: automação de testes E2E e de integração sobre serviços serverless na AWS.",
+          "Pipelines de CI/CD e agentes de IA aplicados aos fluxos de engenharia e testes em ambiente regulado.",
+          "Trabalho 100% em inglês com time distribuído nos Estados Unidos."
+        ]
+      },
       "sttart": {
         "company": "Sttart Pay — Movimentos Financeiros",
         "role": "Full Stack Pleno (PJ)",
-        "period": "Fev/2026 — atual",
+        "period": "Fev/2026 — Jul/2026",
         "bullets": [
           "FinTech de movimentações financeiras: PIX, TED, maquininhas e operações com USDT (cripto).",
           "Serviços back-end em Python sobre AWS Lambda; CI/CD com Azure DevOps em ambiente regulado.",
@@ -118,7 +126,7 @@
         "role": "Full Stack (PJ)",
         "period": "Mai/2024 — atual",
         "bullets": [
-          "Atuação fim-a-fim em SaaS próprios: requisitos, arquitetura, banco de dados, deploy na Vercel/AWS e manutenção contínua.",
+          "Atuação fim-a-fim em SaaS próprios, do zero ao deploy: requisitos, arquitetura, banco de dados, publicação na Vercel/AWS e manutenção contínua.",
           "Aquisição e onboarding de clientes pagantes em paralelo ao desenvolvimento técnico, atuando em produto, suporte e billing.",
           "Automações com N8N integrando APIs externas (LinkedIn, e-mail, webhooks) e fluxos de IA com OpenAI."
         ]

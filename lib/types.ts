@@ -37,13 +37,14 @@ export type StatMeta = {
   suffix: string;
 };
 
-export type ExperienceKey = "sttart" | "freelancer" | "datacrazy" | "fcs";
+export type ExperienceKey = "paytheory" | "sttart" | "freelancer" | "datacrazy" | "fcs";
 
 export type ExperienceMeta = {
   key: ExperienceKey;
   year: string;
   current: boolean;
   stack: readonly string[];
+  location?: "usa";
 };
 
 export type SkillCategoryKey =

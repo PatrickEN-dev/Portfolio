@@ -23,10 +23,6 @@
   },
   "hero": {
     "eyebrow": "Software Engineer & Architect",
-    "availability": "Available for new opportunities",
-    "factExperience": "4+ years proven",
-    "factStudy": "5 years of technical study",
-    "factRemote": "Remote or Hybrid",
     "h1Line1": "Systems designed",
     "h1Line2": "as products,",
     "h1Line3": "built",
@@ -61,7 +57,8 @@
     "valueDominios": "FinTech · SaaS · CRM",
     "valueModelo": "Contract or Full-time · Remote or Hybrid",
     "valueLocalizacao": "Botucatu — SP · Brazil",
-    "valueIdiomas": "Portuguese (Native) · English (Intermediate)",
+    "valueIdiomas": "Portuguese (Native) · English (Advanced)",
+    "valueIdiomasCert": "C2 Proficient Certificate — EF SET",
     "valueFormacao": "Bachelor in Systems Analysis and Development",
     "valueFormacaoInst": "Estácio · Completed Jul/2024",
     "valueFormacao2": "Full Stack Web Development",
@@ -103,10 +100,21 @@
     "subtitle": "The milestones and achievements that shape my journey so far.",
     "currentBadge": "Current",
     "items": {
+      "paytheory": {
+        "company": "Pay Theory",
+        "role": "QA & DevOps Engineer (Contract)",
+        "period": "Jul/2026 — present",
+        "bullets": [
+          "US payments-infrastructure FinTech (payments-as-a-service) for software platforms.",
+          "Release quality and reliability: E2E and integration test automation over serverless services on AWS.",
+          "CI/CD pipelines and AI agents applied to engineering and testing workflows in a regulated environment.",
+          "Working 100% in English with a US-distributed team."
+        ]
+      },
       "sttart": {
         "company": "Sttart Pay — Financial Movements",
         "role": "Full Stack Developer, Mid-Level (Contract)",
-        "period": "Feb/2026 — present",
+        "period": "Feb/2026 — Jul/2026",
         "bullets": [
           "FinTech for financial transactions: PIX, TED, card processing and USDT (crypto) operations.",
           "Python back-end services on AWS Lambda; CI/CD on Azure DevOps in a regulated environment.",
@@ -118,7 +126,7 @@
         "role": "Full Stack Developer (Contract)",
         "period": "May/2024 — present",
         "bullets": [
-          "End-to-end ownership of own SaaS products: requirements, architecture, database, Vercel/AWS deployment and ongoing maintenance.",
+          "End-to-end ownership of my own SaaS products, from zero to deploy: requirements, architecture, database, Vercel/AWS deployment and ongoing maintenance.",
           "Customer acquisition and onboarding alongside technical development, owning product, support and billing.",
           "N8N automations integrating external APIs (LinkedIn, email, webhooks) and OpenAI-based AI flows."
         ]

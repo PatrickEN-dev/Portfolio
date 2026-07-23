@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Briefcase, Layers, Clock, MapPin, Languages, GraduationCap } from "lucide-react";
 import { cardClasses } from "@/lib/ui-classes";
+import { profile } from "@/lib/data";
 
 type FichaItem = {
   label: string;
@@ -25,6 +26,7 @@ type Translations = {
   valueModelo: string;
   valueLocalizacao: string;
   valueIdiomas: string;
+  valueIdiomasCert: string;
   valueFormacao: string;
   valueFormacaoInst: string;
   valueFormacao2: string;
@@ -87,7 +89,19 @@ export default function AboutFichaTecnica({ t }: { t: Translations }) {
     {
       label: t.idiomas,
       icon: Languages,
-      body: <div className="text-lg md:text-xl font-semibold tracking-tight">{t.valueIdiomas}</div>,
+      body: (
+        <div className="leading-snug">
+          <div className="text-lg md:text-xl font-semibold tracking-tight">{t.valueIdiomas}</div>
+          <a
+            href={profile.englishCertHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1.5 inline-block text-xs text-caramel underline underline-offset-4 decoration-caramel/40 transition-[color,text-decoration-color] duration-300 ease-apple hover:decoration-caramel"
+          >
+            {t.valueIdiomasCert}
+          </a>
+        </div>
+      ),
     },
     {
       label: t.formacao,

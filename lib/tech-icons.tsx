@@ -85,7 +85,9 @@ const TECH: Record<string, TechSpec> = {
   LLMs: { icon: TbCpu, color: "#8B5E34" },
   RAG: { icon: TbCpu, color: "#8B5E34" },
   Agentes: { icon: TbCpu, color: "#8B5E34" },
+  "AI Agents": { icon: TbCpu, color: "#8B5E34" },
   N8N: { icon: SiN8N, color: "#EA4B71" },
+  "CI/CD": { icon: SiGithubactions, color: "#2088FF" },
 
   // Web fundamentals
   HTML: { icon: SiHtml5, color: "#E34F26" },

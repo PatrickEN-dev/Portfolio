@@ -17,6 +17,23 @@ type Props = {
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
+function UsFlag({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 19 13" className={className} aria-hidden>
+      <rect width="19" height="13" fill="#F5F0E8" />
+      {[1, 3, 5, 7, 9, 11].map((y) => (
+        <rect key={y} y={y} width="19" height="1" fill="#B22234" />
+      ))}
+      <rect width="8" height="7" fill="#1E3A8A" />
+      {[1.5, 3.5, 5.5].map((cy) =>
+        [1.5, 4, 6.5].map((cx) => (
+          <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r="0.55" fill="#F5F0E8" />
+        )),
+      )}
+    </svg>
+  );
+}
+
 export default function ExperienceItem({
   entry,
   index,
@@ -79,14 +96,21 @@ export default function ExperienceItem({
       >
         <h3 className="font-display text-display-sm tracking-tighter2 leading-tight">
           {company}
+          {entry.location === "usa" && (
+            <span className="ml-3 inline-flex items-center gap-1.5 align-middle whitespace-nowrap">
+              <UsFlag className="h-3.5 w-[1.25rem] rounded-[2px] shadow-sm" />
+              <span className="font-mono text-[0.65rem] uppercase tracking-widest text-blue-900 dark:text-blue-400">
+                USA
+              </span>
+            </span>
+          )}
         </h3>
         <div className="mt-2 flex flex-wrap items-center gap-2 md:gap-2.5">
           <span className="font-mono text-[0.65rem] uppercase tracking-widest text-caramel">
             {role}
           </span>
           {entry.current && (
-            <span className="inline-flex items-center gap-1 font-mono text-[0.6rem] uppercase tracking-widest text-emerald-700 dark:text-emerald-400 bg-emerald-700/10 border border-emerald-700/20 rounded-full px-2 py-0.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" />
+            <span className="font-mono text-[0.6rem] uppercase tracking-widest text-linen bg-caramel rounded-full px-2 py-0.5">
               {currentBadge}
             </span>
           )}

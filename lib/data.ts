@@ -13,6 +13,7 @@ export const profile = {
   yearsExperience: 4,
   portrait: "/me/portrait.jpg",
   headshot: "/me/headshot.jpg",
+  englishCertHref: "https://cert.efset.org/pt/VJSXFm",
 } as const;
 
 export const contacts: readonly ContactMeta[] = [
@@ -33,7 +34,14 @@ export const experience: readonly ExperienceMeta[] = [
   { key: "datacrazy", year: "2023", current: false, stack: ["React", "Next.js", "NestJS", "C# .NET", "Kubernetes"] },
   { key: "fcs", year: "2024", current: false, stack: [".NET Core", "React", "AWS Lambda", "SQL"] },
   { key: "freelancer", year: "2024", current: true, stack: ["Next.js", "NestJS", "N8N", "OpenAI"] },
-  { key: "sttart", year: "2026", current: true, stack: ["Python", "AWS Lambda", "Azure DevOps"] },
+  { key: "sttart", year: "2026", current: false, stack: ["Python", "AWS Lambda", "Azure DevOps"] },
+  {
+    key: "paytheory",
+    year: "2026",
+    current: true,
+    location: "usa",
+    stack: ["JavaScript", "TypeScript", "AI Agents", "CI/CD", "AWS"],
+  },
 ];
 
 export const projects: readonly ProjectMeta[] = [
