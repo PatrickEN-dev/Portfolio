@@ -15,7 +15,7 @@ Tone is **CV-style professional Brazilian Portuguese** — recruiter-friendly, a
 - **Tailwind CSS** with custom design tokens (CSS variables for light/dark)
 - **next-intl** for i18n (pt / en / es, default `pt`, `localePrefix: "as-needed"`)
 - **next-themes** for light/dark (class strategy)
-- **Framer Motion** for scroll/in-view animations
+- **Framer Motion** for scroll/in-view animations — loaded via `LazyMotion` + `domAnimation` in strict mode ([MotionProvider](components/providers/MotionProvider.tsx)): always use `m.*` components (`import { m } from "framer-motion"`), never `motion.*` (throws under strict). Stick to opacity/transform features covered by `domAnimation`.
 - **Lenis** for smooth scroll (lerp mode + autoRaf; disabled under `prefers-reduced-motion` and on coarse-pointer devices)
 - **Geist Sans + Geist Mono** via `geist` npm package (Fraunces was explicitly rejected)
 - **lucide-react** + **react-icons** (`Si*` / `Tb*`) for icons
@@ -78,7 +78,7 @@ middleware.ts         # next-intl middleware
 public/
   me/portrait.jpg     # hero portrait
   me/headshot.jpg     # differentials photo card
-  projects/<slug>.png # project screenshots
+  projects/<slug>.webp # project screenshots (pre-compressed WebP q80 — don't commit raw PNGs)
   cv/patrick-engela-<locale>.pdf
 ```
 
@@ -107,12 +107,14 @@ This order was finalized after user feedback — do not reorder without asking.
 - **Icons**: prefer mapping names through [tech-icons.tsx](lib/tech-icons.tsx). Add new techs to the `TECH` object with a brand color.
 - **Cards**: use `cardClasses({ padding })` instead of re-inventing the surface.
 - **Images**: use `next/image` everywhere. Calibrate `quality` per use (Hero 85 + `fetchPriority="high"`, projetos 80 lazy, headshot 80 lazy). Project screenshots have a state-driven error fallback in [ProjectMedia](components/sections/projects/ProjectMedia.tsx).
-- **No new providers without checking [layout.tsx](app/[locale]/layout.tsx#L134-L144)** — order matters (NextIntl → Theme → Lenis).
+- **No new providers without checking [layout.tsx](app/[locale]/layout.tsx#L134-L144)** — order matters (NextIntl → Theme → Lenis → Motion).
+- **Client i18n payload is trimmed**: `NextIntlClientProvider` only receives the `ui` namespace. If a new client component needs another namespace, add it explicitly in [layout.tsx](app/[locale]/layout.tsx) — don't pass all messages back.
 
 ### Animation & scroll (performance-tuned, don't regress)
 - **Animations must respect `prefers-reduced-motion`** — use Framer's `useReducedMotion()` or check inside effects (see [LenisProvider](components/providers/LenisProvider.tsx#L8-L9)).
 - **Lenis config is fixed**: `lerp: 0.12` + `autoRaf: true` + `syncTouch: false`. Disabled when `prefers-reduced-motion: reduce` OR `pointer: coarse`. Don't switch to `duration` mode — heavier on Chrome.
-- **`ScrollProgress` uses `scrollYProgress` directly**. Do NOT add `useSpring` — Lenis already smooths the values and the spring duplicates work each frame.
+- **`ScrollProgress` uses `scrollYProgress` directly**. Do NOT add `useSpring` — Lenis already smooths the values and the spring duplicates work each frame. It renders only the active variant (mobile bar or desktop line) after mount via `matchMedia` — keep it that way.
+- **Hero headline reveal is CSS-only** (`.reveal-word` keyframes in globals.css, rendered by the server-component [RevealText](components/ui/RevealText.tsx)). Don't reintroduce JS-driven mount animations on the hero H1 — the text must paint before hydration (LCP).
 - **`whileInView` consolidation**: when child motion elements all enter the viewport together (a grid of cards visible at once, or stacked items in the same row), drive them from a single parent with `staggerChildren` instead of giving each one its own observer. See [AboutFichaTecnica](components/sections/about/AboutFichaTecnica.tsx), [ScenarioPanel](components/sections/for-you/ScenarioPanel.tsx), [ExperienceItem](components/sections/experience/ExperienceItem.tsx). When cards are tall and enter at different scroll positions (Projects, Differentials, Skills cards), keep one observer per card.
 - **`BackToTop` uses IntersectionObserver**, not a scroll listener. Don't reintroduce `addEventListener("scroll")` for visibility toggles.
 - **`transition-all` is banned.** Use specific properties: `transition-[transform,color,border-color,background-color]`. Paint cost matters.

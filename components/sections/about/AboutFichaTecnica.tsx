@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Briefcase, Layers, Clock, MapPin, Languages, GraduationCap } from "lucide-react";
 import { cardClasses } from "@/lib/ui-classes";
 import { profile } from "@/lib/data";
@@ -126,7 +126,7 @@ export default function AboutFichaTecnica({ t }: { t: Translations }) {
   ];
 
   return (
-    <motion.ul
+    <m.ul
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-10%" }}
@@ -134,7 +134,7 @@ export default function AboutFichaTecnica({ t }: { t: Translations }) {
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"
     >
       {items.map(({ label, icon: Icon, body }) => (
-        <motion.li
+        <m.li
           key={label}
           variants={item}
           className={cardClasses({ padding: "sm" })}
@@ -144,8 +144,8 @@ export default function AboutFichaTecnica({ t }: { t: Translations }) {
             {label}
           </div>
           {body}
-        </motion.li>
+        </m.li>
       ))}
-    </motion.ul>
+    </m.ul>
   );
 }

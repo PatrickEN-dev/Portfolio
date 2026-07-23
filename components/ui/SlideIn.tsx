@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
 type Props = {
@@ -24,7 +24,7 @@ export default function SlideIn({
   const offsetX = reduced ? 0 : from === "left" ? -distance : distance;
 
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, x: offsetX }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-10%" }}
@@ -32,6 +32,6 @@ export default function SlideIn({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

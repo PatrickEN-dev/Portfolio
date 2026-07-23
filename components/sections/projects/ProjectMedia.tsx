@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Image from "next/image";
 import { getTechIcon } from "@/lib/tech-icons";
 import type { ProjectMeta } from "@/lib/types";
@@ -15,7 +15,7 @@ export default function ProjectMedia({ project, statusLabel }: Props) {
   const [imgError, setImgError] = useState(false);
 
   const url = project.liveHref ?? project.repoHref;
-  const displayUrl = url ? new URL(url).host : project.slug;
+  const displayUrl = useMemo(() => (url ? new URL(url).host : project.slug), [url, project.slug]);
 
   return (
     <div className="relative overflow-hidden rounded-2xl border border-espresso/10 bg-sand shadow-sm">

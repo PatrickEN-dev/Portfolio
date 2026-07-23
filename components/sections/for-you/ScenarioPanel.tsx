@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 
 type Props = {
   number: string;
@@ -52,7 +52,7 @@ export default function ScenarioPanel({
   };
 
   return (
-    <motion.article
+    <m.article
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-10%" }}
@@ -62,20 +62,20 @@ export default function ScenarioPanel({
       }`}
     >
       <div className="relative">
-        <motion.div
+        <m.div
           aria-hidden
           variants={fadeIn}
           className="font-mono italic text-[clamp(4rem,7vw,5.5rem)] leading-none tracking-tighter2 text-caramel/25 select-none mb-3 md:mb-5"
         >
           {number}
-        </motion.div>
+        </m.div>
         <h3 className="font-display italic text-display-sm md:text-display-md leading-[1.05] tracking-tighter2 text-ink max-w-md">
           {scenario}
         </h3>
       </div>
 
       <div className="flex flex-col gap-6 md:gap-8 md:pt-[clamp(1rem,2vw,3rem)]">
-        <motion.p
+        <m.p
           variants={fadeUp}
           className="text-[1.05rem] md:text-body-lg leading-relaxed text-ink-muted"
         >
@@ -86,16 +86,16 @@ export default function ScenarioPanel({
           <span aria-hidden className="font-display text-2xl md:text-3xl leading-none text-caramel ml-1 align-[-0.15em]">
             ”
           </span>
-        </motion.p>
+        </m.p>
 
-        <motion.div
+        <m.div
           aria-hidden
           variants={grow}
           style={{ transformOrigin: "left center", willChange: "transform" }}
           className="h-px bg-gradient-to-r from-caramel via-caramel/35 to-transparent"
         />
 
-        <motion.div
+        <m.div
           variants={slideX}
           className="flex items-start gap-4"
         >
@@ -105,8 +105,8 @@ export default function ScenarioPanel({
           <p className="text-[0.95rem] md:text-[1rem] leading-relaxed text-ink font-medium pt-1.5">
             {evidence}
           </p>
-        </motion.div>
+        </m.div>
       </div>
-    </motion.article>
+    </m.article>
   );
 }

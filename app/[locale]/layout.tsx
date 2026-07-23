@@ -6,6 +6,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { routing } from "@/i18n/routing";
 import LenisProvider from "@/components/providers/LenisProvider";
+import MotionProvider from "@/components/providers/MotionProvider";
 import ThemeProvider from "@/components/providers/ThemeProvider";
 import "../globals.css";
 
@@ -50,33 +51,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     metadataBase: new URL(SITE_URL),
     title: {
       default: t("title"),
-      template: "%s — Patrick Almeida",
+      template: "%s · Patrick Almeida",
     },
     description: t("description"),
     applicationName: "Patrick Almeida",
-    keywords: [
-      "Patrick Almeida",
-      "Patrick Engela",
-      "Patrick de Almeida Engela",
-      "Full Stack Developer",
-      "Software Architect",
-      "Arquiteto de Software",
-      "FinTech",
-      "SaaS",
-      "Multi-tenant",
-      "TypeScript",
-      "Next.js",
-      "NestJS",
-      ".NET",
-      "Python",
-      "AWS",
-      "Azure DevOps",
-      "Kubernetes",
-      "Microserviços",
-      "DDD",
-      "Botucatu",
-      "Brasil",
-    ],
     authors: [{ name: "Patrick de Almeida Engela", url: "https://github.com/PatrickEN-dev" }],
     creator: "Patrick de Almeida Engela",
     publisher: "Patrick de Almeida Engela",
@@ -135,9 +113,11 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
       <body className="font-sans bg-linen text-espresso antialiased" suppressHydrationWarning>
-        <NextIntlClientProvider messages={messages} locale={locale}>
+        <NextIntlClientProvider messages={{ ui: messages.ui ?? {} }} locale={locale}>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-            <LenisProvider>{children}</LenisProvider>
+            <LenisProvider>
+              <MotionProvider>{children}</MotionProvider>
+            </LenisProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

@@ -79,6 +79,20 @@ body {
   }
 }
 
+@keyframes reveal-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.reveal-word {
+  display: inline-block;
+  white-space: pre;
+  animation: reveal-up 0.7s var(--ease-apple) backwards;
+  animation-delay: var(--reveal-delay, 0s);
+}
+
 .grain {
   position: absolute;
   inset: 0;

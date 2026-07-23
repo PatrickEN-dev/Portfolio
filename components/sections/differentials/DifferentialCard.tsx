@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import type { ReactNode } from "react";
 import { cardClasses } from "@/lib/ui-classes";
 import { cn } from "@/lib/utils";
@@ -15,7 +15,7 @@ type Props = {
 
 export default function DifferentialCard({ index, title, summary, body, icon }: Props) {
   return (
-    <motion.article
+    <m.article
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-8%" }}
@@ -43,6 +43,6 @@ export default function DifferentialCard({ index, title, summary, body, icon }: 
           <p className="text-[0.8rem] leading-relaxed text-ink-muted">{body}</p>
         </div>
       </div>
-    </motion.article>
+    </m.article>
   );
 }

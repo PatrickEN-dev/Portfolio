@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { getTechSpec } from "@/lib/tech-icons";
 import { cardClasses } from "@/lib/ui-classes";
 
@@ -17,7 +17,7 @@ type Props = {
 
 export default function SkillCategoryCard({ label, index, items }: Props) {
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-12%" }}
@@ -50,6 +50,6 @@ export default function SkillCategoryCard({ label, index, items }: Props) {
           );
         })}
       </ul>
-    </motion.div>
+    </m.div>
   );
 }

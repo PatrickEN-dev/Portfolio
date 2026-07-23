@@ -2,7 +2,7 @@
 
 import { ArrowUpRight } from "lucide-react";
 import { TbBrandGithub } from "react-icons/tb";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { getTechIcon } from "@/lib/tech-icons";
 import { cn } from "@/lib/utils";
 import type { ProjectMeta } from "@/lib/types";
@@ -33,7 +33,7 @@ export default function ProjectCard({
   const reversed = index % 2 === 1;
 
   return (
-    <motion.article
+    <m.article
       initial={{ opacity: 0, x: reversed ? 80 : -80 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-10%" }}
@@ -99,6 +99,6 @@ export default function ProjectCard({
           )}
         </div>
       </div>
-    </motion.article>
+    </m.article>
   );
 }

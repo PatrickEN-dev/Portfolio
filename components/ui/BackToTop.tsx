@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, m, useReducedMotion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
@@ -38,7 +38,7 @@ export default function BackToTop() {
   return (
     <AnimatePresence>
       {visible && (
-        <motion.button
+        <m.button
           type="button"
           onClick={handleClick}
           aria-label={t("backToTop")}
@@ -49,7 +49,7 @@ export default function BackToTop() {
           className="md:hidden fixed z-40 bottom-[max(1.25rem,calc(env(safe-area-inset-bottom)+0.75rem))] right-[max(1.25rem,env(safe-area-inset-right))] touch-target flex h-12 w-12 items-center justify-center rounded-full bg-caramel text-linen shadow-lg shadow-espresso/15 active:scale-95 transition-transform"
         >
           <ArrowUp className="h-5 w-5" strokeWidth={2} />
-        </motion.button>
+        </m.button>
       )}
     </AnimatePresence>
   );

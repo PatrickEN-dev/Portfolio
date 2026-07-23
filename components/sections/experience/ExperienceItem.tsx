@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { getTechIcon } from "@/lib/tech-icons";
 import type { ExperienceMeta } from "@/lib/types";
@@ -65,7 +65,7 @@ export default function ExperienceItem({
   };
 
   return (
-    <motion.li
+    <m.li
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-10%" }}
@@ -73,7 +73,7 @@ export default function ExperienceItem({
       className="relative mb-12 md:mb-24"
     >
       <div className="absolute z-10 left-4 md:left-1/2 top-0 -translate-x-1/2">
-        <motion.span
+        <m.span
           variants={badge}
           className={cn(
             "inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 font-mono text-[0.7rem] uppercase tracking-widest whitespace-nowrap shadow-sm",
@@ -84,7 +84,7 @@ export default function ExperienceItem({
         >
           {entry.year}
           {entry.current && <span aria-hidden>→</span>}
-        </motion.span>
+        </m.span>
       </div>
 
       <div
@@ -145,6 +145,6 @@ export default function ExperienceItem({
           })}
         </div>
       </div>
-    </motion.li>
+    </m.li>
   );
 }
