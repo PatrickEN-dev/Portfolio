@@ -30,7 +30,7 @@ export const stats: readonly StatMeta[] = [
   { key: "Saas", value: 3, suffix: "+" },
 ];
 
-export const experience: readonly ExperienceMeta[] = [
+const experienceEntries: readonly ExperienceMeta[] = [
   { key: "datacrazy", year: "2023", current: false, stack: ["React", "Next.js", "NestJS", "C# .NET", "Kubernetes"] },
   { key: "fcs", year: "2024", current: false, stack: [".NET Core", "React", "AWS Lambda", "SQL"] },
   { key: "freelancer", year: "2024", current: true, stack: ["Next.js", "NestJS", "N8N", "OpenAI"] },
@@ -43,6 +43,20 @@ export const experience: readonly ExperienceMeta[] = [
     stack: ["JavaScript", "TypeScript", "AI Agents", "CI/CD", "AWS"],
   },
 ];
+
+/**
+ * Recruiters read a CV newest-first, so the timeline renders in reverse chronological
+ * order. Entries sharing a start year are tied apart by `current`: a role still running
+ * today is more recent than one that already ended that same year.
+ */
+function byMostRecentFirst(a: ExperienceMeta, b: ExperienceMeta): number {
+  const yearGap = Number(b.year) - Number(a.year);
+  if (yearGap !== 0) return yearGap;
+  if (a.current !== b.current) return a.current ? -1 : 1;
+  return 0;
+}
+
+export const experience: readonly ExperienceMeta[] = [...experienceEntries].sort(byMostRecentFirst);
 
 export const projects: readonly ProjectMeta[] = [
   {

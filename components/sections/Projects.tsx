@@ -26,7 +26,7 @@ export default async function Projects() {
           </div>
         </div>
 
-        <div className="grid gap-12 md:gap-24">
+        <div className="grid grid-cols-1 gap-12 md:gap-24">
           {projects.map((p, idx) => (
             <ProjectCard
               key={p.slug}

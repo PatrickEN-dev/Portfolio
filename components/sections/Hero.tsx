@@ -19,7 +19,7 @@ export default async function Hero() {
 
   return (
     <section className="relative grid min-h-[100svh] md:min-h-screen md:grid-cols-2 lg:grid-cols-[1.05fr_1fr]">
-      <div className="relative flex flex-col justify-between px-6 pt-[max(5rem,calc(env(safe-area-inset-top)+4rem))] pb-10 sm:p-12 lg:p-16 xl:p-20 min-h-[100svh] md:min-h-screen order-2 md:order-1 bg-linen overflow-hidden">
+      <div className="relative flex flex-col justify-between px-6 pt-[max(5rem,calc(env(safe-area-inset-top)+4rem))] pb-10 sm:p-12 lg:p-16 xl:p-20 md:min-h-screen order-2 md:order-1 bg-linen overflow-hidden">
         <div className="grain pointer-events-none absolute inset-0 opacity-[0.04]" />
 
         <div className="relative z-10 flex flex-col gap-4 sm:gap-5">
@@ -66,16 +66,18 @@ export default async function Hero() {
               </CTAButton>
             )}
 
-            {github && (
-              <IconCircleButton href={github.href} label="GitHub" external>
-                <TbBrandGithub className="h-5 w-5" strokeWidth={1.8} />
-              </IconCircleButton>
-            )}
-            {email && (
-              <IconCircleButton href={email.href} label="Email">
-                <Mail className="h-5 w-5" strokeWidth={1.8} />
-              </IconCircleButton>
-            )}
+            <div className="flex shrink-0 items-center gap-2.5 sm:gap-3">
+              {github && (
+                <IconCircleButton href={github.href} label="GitHub" external>
+                  <TbBrandGithub className="h-5 w-5" strokeWidth={1.8} />
+                </IconCircleButton>
+              )}
+              {email && (
+                <IconCircleButton href={email.href} label="Email">
+                  <Mail className="h-5 w-5" strokeWidth={1.8} />
+                </IconCircleButton>
+              )}
+            </div>
           </div>
         </div>
 

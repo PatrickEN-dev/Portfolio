@@ -39,7 +39,7 @@ export default function ProjectCard({
       viewport={{ once: true, margin: "-10%" }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className={cn(
-        "grid gap-6 md:gap-12 md:grid-cols-[1.4fr_1fr] items-center",
+        "grid grid-cols-1 gap-6 md:gap-12 md:grid-cols-[1.4fr_1fr] items-center",
         reversed && "md:grid-cols-[1fr_1.4fr]"
       )}
     >
