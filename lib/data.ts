@@ -23,10 +23,14 @@ export const contacts: readonly ContactMeta[] = [
   { key: "GitHub", value: "PatrickEN-dev", href: "https://github.com/PatrickEN-dev" },
 ];
 
+export function getContacts(locale: AppLocale): readonly ContactMeta[] {
+  return locale === "en" ? contacts.filter((c) => c.key !== "WhatsApp") : contacts;
+}
+
 export const stats: readonly StatMeta[] = [
   { key: "Years", value: 4, suffix: "+" },
   { key: "Clients", value: 4, suffix: "+" },
-  { key: "Fintechs", value: 2, suffix: "" },
+  { key: "Fintechs", value: 3, suffix: "" },
   { key: "Saas", value: 3, suffix: "+" },
 ];
 
@@ -67,6 +71,7 @@ export const projects: readonly ProjectMeta[] = [
     stack: ["Next.js", "NestJS", "PostgreSQL", "N8N", "Redis"],
     image: "/projects/coldmail.webp",
     liveHref: "https://coldmail-bg-ia-labtracker.vercel.app",
+    repoHref: "https://github.com/PatrickEN-dev/cold-mail-backend",
     year: "2024",
   },
   {
@@ -85,9 +90,10 @@ export const projects: readonly ProjectMeta[] = [
     msgKey: "bancoAgil",
     name: "Banco Ágil · AI Agents",
     statusKey: "showcase",
-    stack: ["Python", "RAG", "OpenAI", "Next.js", "FastAPI"],
+    stack: ["Python", "FastAPI", "OpenAI", "PostgreSQL", "Next.js"],
     image: "/projects/banco-agil.webp",
     liveHref: "https://ia-agent-tech-for-humans-frontend.vercel.app",
+    repoHref: "https://github.com/PatrickEN-dev/IA-Agent-Tech-For-Humans-Back-end",
     year: "2025",
   },
 ];

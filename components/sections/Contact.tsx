@@ -4,7 +4,7 @@ import { TbBrandLinkedin, TbBrandGithub } from "react-icons/tb";
 import { getLocale, getTranslations } from "next-intl/server";
 import SectionEyebrow from "@/components/ui/SectionEyebrow";
 import CTAButton from "@/components/ui/CTAButton";
-import { contacts, getCvHref } from "@/lib/data";
+import { getContacts, getCvHref } from "@/lib/data";
 import type { AppLocale } from "@/i18n/routing";
 import type { ContactKey } from "@/lib/types";
 
@@ -62,7 +62,7 @@ export default async function Contact() {
         </div>
 
         <ul className="mt-12 md:mt-16 grid gap-px bg-inverse-fg/10 border-y border-inverse-fg/10">
-          {contacts.map((c) => {
+          {getContacts(locale).map((c) => {
             const Icon = ICONS[c.key];
             const external = c.href.startsWith("http");
             return (

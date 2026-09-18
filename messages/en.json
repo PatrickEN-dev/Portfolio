@@ -10,7 +10,6 @@
     "viewProject": "View project",
     "repository": "Repository",
     "viewProjects": "View projects",
-    "scrollHint": "scroll",
     "findMeAt": "Find me on",
     "and": "and",
     "downloadMy": "Download my",
@@ -28,13 +27,11 @@
     "h1Line3": "built",
     "h1Line4": "to scale.",
     "subtitle": "Node.js full stack with a focus on back-end and microservices architecture. Work in FinTechs, CRMs and multi-tenant SaaS in production.",
-    "techList": "TypeScript · Next.js · NestJS · .NET · Python · Azure DevOps · AWS",
-    "location": "Botucatu — SP · Brazil",
-    "availabilityModel": "Contract or Full-time · Remote or Hybrid (1x/month)"
+    "techList": "TypeScript · Next.js · NestJS · .NET · Python · Azure DevOps · AWS"
   },
   "about": {
     "eyebrow": "About",
-    "bioBefore": "I'm a full stack developer with over four years of experience. I grew from Junior to Mid-Level in a corporate environment and shipped two of my own SaaS products to production with active paying clients. My focus is building systems prepared for ",
+    "bioBefore": "I'm a full stack developer with over four years of experience. I grew from Junior to Mid-Level in a corporate environment and shipped three of my own SaaS products, with active paying clients. My focus is building systems prepared for ",
     "bioHighlight": "real production",
     "bioAfter": ", with the robustness that environment demands.",
     "summaryLabel": "Open to opportunities",
@@ -63,17 +60,17 @@
     "valueFormacaoInst": "Estácio · Completed Jul/2024",
     "valueFormacao2": "Full Stack Web Development",
     "valueFormacao2Inst": "Kenzie Academy",
-    "valueFormacao2Detail": "3000+ hours of live classes · weekly project deliveries",
+    "valueFormacao2Detail": "Weekly project deliveries",
     "statsTitle": "In numbers",
     "statYears": "years of experience",
     "statClients": "active paying clients",
-    "statFintechs": "FinTechs on record",
+    "statFintechs": "FinTechs on my résumé",
     "statSaas": "SaaS in production"
   },
   "projects": {
     "eyebrow": "In production",
     "title": "Projects",
-    "intro": "1 SaaS in production · 4 active paying clients · 1 technical showcase",
+    "intro": "3 SaaS products of my own · 4 active paying clients",
     "status": {
       "production": "In production",
       "testing": "In testing",
@@ -85,12 +82,12 @@
         "metric": "3 recurring paying clients in production"
       },
       "btBarber": {
-        "tagline": "Multi-tenant SaaS system for barbershops with three specialized interfaces: client for online booking, barber for schedule management and admin for operations management. Includes integrated e-commerce module for product sales, ratings system and timetable.",
+        "tagline": "Multi-tenant SaaS system for barbershops with three specialized interfaces: client for online booking, barber for schedule management and admin for operations management. Includes integrated e-commerce module for product sales, ratings system and scheduling calendar.",
         "metric": "1 active client · 3 in onboarding"
       },
       "bancoAgil": {
-        "tagline": "Multi-agent banking customer service system with four specialized AI agents covering triage, credit analysis, currency exchange and financial profile. RAG architecture with OpenAI, CPF identity validation and contextual conversational routing between agents.",
-        "metric": "Multi-agent RAG architecture showcase"
+        "tagline": "Conversational banking assistant with four specialized agents covering triage, credit analysis, currency exchange and financial profiling. The conversation runs on a deterministic state machine: the LLM interprets language, but never decides a credit limit.",
+        "metric": "4 specialized agents"
       }
     }
   },
@@ -178,7 +175,7 @@
     "items": {
       "onboarding": {
         "scenario": "Fast delivery in systems I don't know yet.",
-        "quote": "Working at the same time in a regulated corporate environment and on own products got me used to ramping up quickly in existing systems. I read the code, identify business rules under pressure and start shipping early, with autonomy to dig into what's missing.",
+        "quote": "Working at the same time in a regulated corporate environment and on my own products got me used to ramping up quickly in existing systems. I read the code, identify business rules under pressure and start shipping early, with autonomy to dig into what's missing.",
         "evidence": "For the team, that means less onboarding time, less operational coordination and more speed to unblock critical backlog."
       },
       "runtime": {
@@ -193,24 +190,24 @@
       },
       "ownership": {
         "scenario": "The stance of someone who carries the product through.",
-        "quote": "Building own SaaS products alongside corporate contracts shaped a continuous sense of responsibility for the final result. That habit brings autonomy, prioritization by value and constant care for what the user experiences.",
+        "quote": "Building my own SaaS products alongside corporate contracts shaped a continuous sense of responsibility for the final result. That habit brings autonomy, prioritization by value and constant care for what the user experiences.",
         "evidence": "For the team, that means a profile that commits to the collective outcome, from feature scope all the way to how it behaves in the user's hand."
       }
     }
   },
   "differentials": {
-    "eyebrow": "What sets me apart",
-    "title": "What makes me different.",
+    "eyebrow": "Strengths",
+    "title": "What sets me apart.",
     "items": {
       "architecture": {
         "title": "Software Architecture",
-        "summary": "I think the system before coding. How will it scale? Where does it break first? How does it evolve without a rewrite?",
+        "summary": "I think through the system before I write code. How will it scale? Where does it break first? How does it evolve without a rewrite?",
         "body": "DDD with bounded contexts, SOLID separation across microservices, asynchronous communication with queues, Kubernetes orchestration, events vs commands (CQRS where it fits)."
       },
       "product": {
         "title": "Product Sense",
         "summary": "I understand the business problem before choosing the technical solution. Code serves the product, not the other way around.",
-        "body": "Stakeholder conversations, reading metrics and competition, impact-prioritized proposals. I have built 2 of my own SaaS products from idea to paying customer."
+        "body": "Stakeholder conversations, reading metrics and competition, impact-prioritized proposals. I have built 3 of my own SaaS products from idea to paying customer."
       },
       "production": {
         "title": "Production & Reliability",
@@ -232,7 +229,7 @@
   "contact": {
     "eyebrow": "Contact",
     "closer": "Let's talk.",
-    "subtitle": "Response within 24h on business days. Open to technical interviews, exploratory chats or a virtual coffee.",
+    "subtitle": "Response within 24h on business days. Open to technical interviews or exploratory chats.",
     "labels": {
       "Email": "Email",
       "WhatsApp": "WhatsApp",

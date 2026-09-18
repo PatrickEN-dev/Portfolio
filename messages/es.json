@@ -10,7 +10,6 @@
     "viewProject": "Ver proyecto",
     "repository": "Repositorio",
     "viewProjects": "Ver proyectos",
-    "scrollHint": "scroll",
     "findMeAt": "Encuéntrame en",
     "and": "y",
     "downloadMy": "Descarga mi",
@@ -28,13 +27,11 @@
     "h1Line3": "construidos",
     "h1Line4": "para escalar.",
     "subtitle": "Full stack Node.js con foco en back-end y arquitectura de microservicios. Actuación en FinTechs, CRMs y SaaS multi-tenant en producción.",
-    "techList": "TypeScript · Next.js · NestJS · .NET · Python · Azure DevOps · AWS",
-    "location": "Botucatu — SP · Brasil",
-    "availabilityModel": "Contrato o Tiempo completo · Remoto o Híbrido (1x/mes)"
+    "techList": "TypeScript · Next.js · NestJS · .NET · Python · Azure DevOps · AWS"
   },
   "about": {
     "eyebrow": "Sobre mí",
-    "bioBefore": "Soy desarrollador full stack con más de cuatro años de experiencia. Crecí de Junior a Semisenior en entorno corporativo y construí dos SaaS propios en producción con clientes pagantes activos. Mi foco es construir sistemas preparados para ",
+    "bioBefore": "Soy desarrollador full stack con más de cuatro años de experiencia. Crecí de Junior a Semisenior en entorno corporativo y construí tres SaaS propios, con clientes pagantes activos. Mi foco es construir sistemas preparados para ",
     "bioHighlight": "producción real",
     "bioAfter": ", con la robustez que ese entorno exige.",
     "summaryLabel": "Abierto a oportunidades",
@@ -63,7 +60,7 @@
     "valueFormacaoInst": "Estácio · Concluido Jul/2024",
     "valueFormacao2": "Desarrollo Web Full Stack",
     "valueFormacao2Inst": "Kenzie Academy",
-    "valueFormacao2Detail": "3000+ horas de clase en vivo · entregas semanales de proyectos",
+    "valueFormacao2Detail": "Entregas semanales de proyectos",
     "statsTitle": "En números",
     "statYears": "años de experiencia",
     "statClients": "clientes pagantes activos",
@@ -73,7 +70,7 @@
   "projects": {
     "eyebrow": "En producción",
     "title": "Proyectos",
-    "intro": "1 SaaS en producción · 4 clientes pagantes activos · 1 showcase técnico",
+    "intro": "3 SaaS propios · 4 clientes pagantes activos",
     "status": {
       "production": "En producción",
       "testing": "En pruebas",
@@ -89,8 +86,8 @@
         "metric": "1 cliente en operación · 3 en onboarding"
       },
       "bancoAgil": {
-        "tagline": "Sistema multi-agente de atención bancaria con cuatro agentes de IA especializados en triage, análisis de crédito, cotización de divisas y perfil financiero. Arquitectura RAG con OpenAI, validación de identidad por CPF y enrutamiento conversacional contextual entre agentes.",
-        "metric": "Showcase de arquitectura RAG multi-agente"
+        "tagline": "Asistente bancario conversacional con cuatro agentes especializados en triaje, análisis de crédito, cambio de divisas y perfil financiero. La conversación corre sobre una máquina de estados determinista: el LLM interpreta lenguaje, pero nunca decide un valor de crédito.",
+        "metric": "4 agentes especializados"
       }
     }
   },
@@ -210,7 +207,7 @@
       "product": {
         "title": "Visión de Producto",
         "summary": "Entiendo el problema del negocio antes de elegir la solución técnica. El código sirve al producto, no al revés.",
-        "body": "Conversación con stakeholders, lectura de métricas y competencia, propuestas priorizadas por impacto. He construido 2 SaaS propios desde la idea hasta el cliente pagante."
+        "body": "Conversación con stakeholders, lectura de métricas y competencia, propuestas priorizadas por impacto. He construido 3 SaaS propios desde la idea hasta el cliente pagante."
       },
       "production": {
         "title": "Producción & Confiabilidad",
@@ -232,7 +229,7 @@
   "contact": {
     "eyebrow": "Contacto",
     "closer": "¿Hablamos?",
-    "subtitle": "Respuesta en hasta 24h en días laborables. Abierto a entrevistas técnicas, charlas exploratorias o un café virtual.",
+    "subtitle": "Respuesta en hasta 24h en días laborables. Abierto a entrevistas técnicas o charlas exploratorias.",
     "labels": {
       "Email": "Email",
       "WhatsApp": "WhatsApp",

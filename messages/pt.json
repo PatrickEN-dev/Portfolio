@@ -10,7 +10,6 @@
     "viewProject": "Ver projeto",
     "repository": "Repositório",
     "viewProjects": "Ver projetos",
-    "scrollHint": "scroll",
     "findMeAt": "Me encontre em",
     "and": "e",
     "downloadMy": "Baixe meu",
@@ -28,13 +27,11 @@
     "h1Line3": "construídos",
     "h1Line4": "para escalar.",
     "subtitle": "Full stack Node.js, com foco em back-end e arquitetura de microserviços. Atuação em FinTechs, CRMs e SaaS multi-tenant em produção.",
-    "techList": "TypeScript · Next.js · NestJS · .NET · Python · Azure DevOps · AWS",
-    "location": "Botucatu — SP · Brasil",
-    "availabilityModel": "PJ ou CLT · Remoto ou Híbrido (1x/mês)"
+    "techList": "TypeScript · Next.js · NestJS · .NET · Python · Azure DevOps · AWS"
   },
   "about": {
     "eyebrow": "Sobre",
-    "bioBefore": "Sou desenvolvedor full stack há mais de quatro anos. Cresci de Júnior a Pleno em ambiente corporativo e construí dois SaaS próprios em produção, com clientes pagantes ativos. Meu foco é construir sistemas preparados para ",
+    "bioBefore": "Sou desenvolvedor full stack há mais de quatro anos. Cresci de Júnior a Pleno em ambiente corporativo e construí três SaaS próprios, com clientes pagantes ativos. Meu foco é construir sistemas preparados para ",
     "bioHighlight": "produção real",
     "bioAfter": ", com a robustez que esse ambiente exige.",
     "summaryLabel": "Aberto a oportunidades",
@@ -63,7 +60,7 @@
     "valueFormacaoInst": "Estácio · Concluído Jul/2024",
     "valueFormacao2": "Desenvolvimento Web Full Stack",
     "valueFormacao2Inst": "Kenzie Academy",
-    "valueFormacao2Detail": "3000+ horas de aula ao vivo · entregas semanais de projetos",
+    "valueFormacao2Detail": "Entregas semanais de projetos",
     "statsTitle": "Em números",
     "statYears": "anos de experiência",
     "statClients": "clientes pagantes ativos",
@@ -73,7 +70,7 @@
   "projects": {
     "eyebrow": "Em produção",
     "title": "Projetos",
-    "intro": "1 SaaS em produção · 4 clientes pagantes ativos · 1 showcase técnico",
+    "intro": "3 SaaS próprios · 4 clientes pagantes ativos",
     "status": {
       "production": "Em produção",
       "testing": "Em testes",
@@ -89,8 +86,8 @@
         "metric": "1 cliente em operação · 3 em onboarding"
       },
       "bancoAgil": {
-        "tagline": "Sistema multi-agente de atendimento bancário com quatro agentes de IA especializados em triagem, análise de crédito, cotação de câmbio e perfil financeiro. Arquitetura RAG com OpenAI, validação de identidade por CPF e roteamento conversacional contextual entre agentes.",
-        "metric": "Showcase de arquitetura RAG multi-agente"
+        "tagline": "Assistente bancário conversacional com quatro agentes especializados em triagem, análise de crédito, câmbio e perfil financeiro. A conversa roda sobre uma máquina de estados determinística: o LLM interpreta linguagem, mas nunca decide um valor de crédito.",
+        "metric": "4 agentes especializados"
       }
     }
   },
@@ -210,7 +207,7 @@
       "product": {
         "title": "Noção de Produto",
         "summary": "Entendo o problema do negócio antes de escolher a solução técnica. Código serve o produto, não o contrário.",
-        "body": "Conversa com stakeholders, leitura de métricas e concorrência, proposta de soluções priorizadas por impacto. Construí 2 SaaS próprios da ideia ao cliente pagante."
+        "body": "Conversa com stakeholders, leitura de métricas e concorrência, proposta de soluções priorizadas por impacto. Construí 3 SaaS próprios da ideia ao cliente pagante."
       },
       "production": {
         "title": "Produção & Confiabilidade",
@@ -232,7 +229,7 @@
   "contact": {
     "eyebrow": "Contato",
     "closer": "Vamos conversar?",
-    "subtitle": "Resposta em até 24h em dias úteis. Estou aberto a entrevistas técnicas, conversas exploratórias ou um café virtual.",
+    "subtitle": "Resposta em até 24h em dias úteis. Estou aberto a entrevistas técnicas ou conversas exploratórias.",
     "labels": {
       "Email": "Email",
       "WhatsApp": "WhatsApp",
